@@ -1,0 +1,105 @@
+items:
+- name: Android
+  items:
+  - name: 시작
+    href: android/getting-started.md
+  - name: 카드 렌더링
+    href: android/render-a-card.md
+  - name: 조치
+    href: android/actions.md
+  - name: 호스트 구성
+    href: android/host-config.md
+  - name: 기본 스타일 지정
+    href: android/native-styling.md
+  - name: 확장성
+    href: android/extensibility.md
+- name: iOS
+  items:
+  - name: 시작
+    href: ios/getting-started.md
+  - name: 카드 렌더링
+    href: ios/render-a-card.md
+  - name: 조치
+    href: ios/actions.md
+  - name: 호스트 구성
+    href: ios/host-config.md
+  - name: 기본 스타일 지정
+    href: ios/native-styling.md
+  - name: 확장성
+    href: ios/extensibility.md
+- name: JavaScript
+  items:
+  - name: 시작
+    href: javascript/getting-started.md
+  - name: 카드 렌더링
+    href: javascript/render-a-card.md
+  - name: 조치
+    href: javascript/actions.md
+  - name: 호스트 구성
+    href: javascript/host-config.md
+  - name: 기본 스타일 지정
+    href: javascript/native-styling.md
+  - name: 확장성
+    href: javascript/extensibility.md
+- name: .NET HTML
+  items:
+  - name: 시작
+    href: net-html/getting-started.md
+  - name: 카드 렌더링
+    href: net-html/render-a-card.md
+  - name: 조치
+    href: net-html/actions.md
+  - name: 호스트 구성
+    href: net-html/host-config.md
+  - name: 기본 스타일 지정
+    href: net-html/native-styling.md
+  - name: 확장성
+    href: net-html/extensibility.md
+- name: .NET WPF
+  items:
+  - name: 시작
+    href: net-wpf/getting-started.md
+  - name: 카드 렌더링
+    href: net-wpf/render-a-card.md
+  - name: 조치
+    href: net-wpf/actions.md
+  - name: 호스트 구성
+    href: net-wpf/host-config.md
+  - name: 기본 스타일 지정
+    href: net-wpf/native-styling.md
+  - name: 확장성
+    href: net-wpf/extensibility.md
+- name: .NET 이미지
+  items:
+  - name: 시작
+    href: net-image/getting-started.md
+  - name: 카드 렌더링
+    href: net-image/render-a-card.md
+  - name: 조치
+    href: net-image/actions.md
+  - name: 호스트 구성
+    href: net-image/host-config.md
+  - name: 기본 스타일 지정
+    href: net-image/native-styling.md
+  - name: 확장성
+    href: net-image/extensibility.md
+- name: UWP
+  items:
+  - name: 시작
+    href: uwp/getting-started.md
+  - name: 카드 렌더링
+    href: uwp/render-a-card.md
+  - name: 조치
+    href: uwp/actions.md
+  - name: 호스트 구성
+    href: uwp/host-config.md
+  - name: 기본 스타일 지정
+    href: uwp/native-styling.md
+  - name: 확장성
+    href: uwp/extensibility.md
+ms.openlocfilehash: 2576fb7239292897dcec3f44411d356731c5ab3c
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552285"
