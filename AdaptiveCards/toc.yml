@@ -1,0 +1,57 @@
+items:
+- name: 개요
+  href: index.md
+- name: 시작
+  items:
+  - name: 봇 개발자
+    href: getting-started/bots.md
+  - name: Windows 개발자
+    href: getting-started/windows.md
+  - name: Outlook 개발자
+    href: getting-started/outlook.md
+- name: 카드 작성
+  items:
+  - name: 시작
+    href: authoring-cards/getting-started.md
+  - name: 카드 스키마
+    href: authoring-cards/card-schema.md
+  - name: 음성 명령
+    href: authoring-cards/speech.md
+  - name: 텍스트 기능
+    href: authoring-cards/text-features.md
+- name: 렌더링 카드
+  items:
+  - name: 시작
+    href: rendering-cards/getting-started.md
+  - name: 조치
+    href: rendering-cards/actions.md
+  - name: 호스트 구성
+    href: rendering-cards/host-config.md
+  - name: 확장성
+    href: rendering-cards/extensibility.md
+  - name: 렌더러 상태
+    href: rendering-cards/renderer-status.md
+  - name: 렌더러 구현
+    href: rendering-cards/implement-a-renderer.md
+- name: SDK
+  items:
+  - name: 카드 작성
+    href: sdk/authoring-cards/toc.yml
+  - name: 렌더링 카드
+    href: sdk/rendering-cards/toc.yml
+- name: 리소스
+  items:
+  - name: 원칙
+    href: resources/principles.md
+  - name: 파트너
+    href: resources/partners.md
+  - name: 도구
+    href: resources/tools.md
+  - name: 로드맵
+    href: resources/future.md
+ms.openlocfilehash: 0d11154a56cef4b2814a28544ebf83b50081bfae
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552345"
