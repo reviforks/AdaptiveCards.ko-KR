@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 545d22a9dd2208d0a506f05943cd5ed9dd3de437
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 8d9e30d4e188a1f0a9d10a9a4821f78b9b3b2f57
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552305"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134203"
 ---
 # <a name="adaptive-cards-overview"></a>적응형 카드 개요 
 
@@ -54,7 +54,7 @@ ms.locfileid: "59552305"
 * **기본 성능** - UI 프레임워크를 직접 대상으로 하므로 기본 성능을 얻을 수 있습니다.
 * **안전** - 콘텐츠는 안전한 페이로드로 제공되므로 UI 프레임워크를 원시 태그 및 스크립팅에 개방할 필요가 없습니다.
 * **손쉬운 구현** - 라이브러리를 상용화하여 지원하는 플랫폼에서 손쉽게 통합할 수 있습니다. 
-* **무료 문서화** - 사유 스키마를 개발, 구현 및 문서화할 필요가 없으므로 시간이 절약됩니다.
+* **무료 설명서** - 사유 스키마를 고안, 구현 및 문서화할 필요가 없으므로 시간이 절약됩니다.
 * **공유 도구** - 사용자 지정 도구를 만들 필요가 없으므로 시간이 절약됩니다.
 
 ## <a name="core-design-principles"></a>주요 디자인 원칙 

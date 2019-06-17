@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 303d5675f58bd2c870dcdf5718d508d2e3c78fca
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: bffa49012a8ebe686fc033f98b2438d2e9e959cc
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553355"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138036"
 ---
 # <a name="renderer-status"></a>렌더러 상태
 다음 표에서 해당 공용 게시 된 버전에 따라 각 렌더러의 현재 상태를 보여 줍니다.
@@ -43,7 +43,7 @@ ms.locfileid: "59553355"
 
 \* HTML 렌더러 라이브러리의 크기를 최소화 하 고 해당 기본 Markdown 프로세서를 사용 하는 응용 프로그램이 수 있도록 기본 Markdown 지원을 포함 되지 않습니다. 그러나 자동으로 HTML 렌더러는 로드 되 면 It Markdown을 사용 합니다.
 
-### <a name="extensbility"></a>Extensbility
+### <a name="extensibility"></a>확장성
 
 |기능 | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |

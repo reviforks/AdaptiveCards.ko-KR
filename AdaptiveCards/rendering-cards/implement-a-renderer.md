@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 09/15/2017
 ms.topic: article
-ms.openlocfilehash: 3c79d768d5c979626b66614a1856ad6c2e390805
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: b39493f82f3378e5a554abc6df890d6821869671
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552555"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138026"
 ---
 # <a name="adaptive-card-renderer-specification"></a>Adaptive Card 렌더러 사양
 
@@ -89,7 +89,7 @@ ms.locfileid: "59552555"
 
 ### <a name="images"></a>이미지
 
-1. 렌더러 **SHOULD** 알고 있어야 모든 HTTP 이미지 다운로드 된 경우 호스트 앱 허용 및 카드가 "완벽 하 게 rendererd"
+1. 렌더러 **SHOULD** 알고 있어야 모든 HTTP 이미지 다운로드 된 경우 앱을 호스트할 수 있도록 카드 "완벽 하 게 되 고"
 1. 렌더러 **해야 합니다** 호스트 구성 검사 `maxImageSize` HTTP 이미지를 다운로드 하는 경우 매개 변수
 1. 렌더러 **해야 합니다** 지원 `.png` 및 `.jpeg`
 1. 렌더러 **SHOULD** 지원 `.gif` 이미지
@@ -142,7 +142,7 @@ ms.locfileid: "59552555"
 
 전송 작업을 HTML 양식 제출 처럼, "전송"을 확인 하려면 각 호스트 응용 프로그램에 의미를 그대로 Adaptive Card는 HTTP post에 HTML 일반적으로 트리거 한다는 점을 제외 하면 합니다. 
 
-1. 때이 **해야** 발생 이벤트는 사용자 작업 invokved를 탭 합니다.  
+1. 때이 **해야** 사용자가 호출 되는 동작 이벤트를 발생 시킵니다.  
 1. 합니다 `data` 속성 **해야** 콜백 페이로드에 포함 됩니다.
 1. 에 대 한 `Action.Submit`, 렌더러 **해야** 카드에 모든 입력을 수집 하 고 해당 값을 검색 합니다. 
 
@@ -156,7 +156,7 @@ ms.locfileid: "59552555"
 1. 경우 HostConfig `supportsInteractivity` 는 `false` 렌더러 **MUST NOT** 입력을 렌더링 합니다.
 2. 입력 **SHOULD** 가능한 가장 높은 정확도 사용 하 여 렌더링 합니다. 예를 들어를 `Input.Date` 날짜 선택 UI 스택을, 다음 렌더러에 대 수 없는 경우이 있지만 사용자에 게 제공 이상적으로 **해야** 표준 텍스트 상자를 렌더링으로 대체 합니다.
 3. 렌더러 **SHOULD** 표시는 `placeholderText` 가능한 경우
-4. 렌더러 **아닙니다** 입력의 유효성 검사를 구현 해야 합니다. Adaptive Card의 사용자가 최종적으로 모든 수신 된 데이터의 유효성을 계획 해야 합니다.
+4. 렌더러 **아닙니다** 입력의 유효성 검사를 구현 해야 합니다. Adaptive Card 사용자 측에서 받은 데이터의 유효성을 검사 하려면 계획 해야 합니다.
 5. 입력 값 바인딩 **해야** 는 적절히 이스케이프 되어야
 
 6. 개체 **해야** 다음과 같이 호스트 응용 프로그램에 반환 합니다.

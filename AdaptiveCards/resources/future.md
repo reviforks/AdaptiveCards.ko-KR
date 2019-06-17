@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/16/2018
 ms.topic: article
-ms.openlocfilehash: 6c6e14108caefa8dd1ff854b29d4651fe9b2d15c
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: f879c164b3471347ba8fa058827b3d79b09be4cd
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553485"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138006"
 ---
 # <a name="future-work"></a>후속 작업
 
@@ -17,7 +17,7 @@ Adaptive card를 정의 하는 훌륭한 진행률, 만들었습니다는 여전
 
 ## <a name="roadmap"></a>로드맵
 
-보시 우리의 [여기에서 현재 (최종이 아닌) 로드맵](https://github.com/Microsoft/AdaptiveCards/projects/8)합니다. 에 불과하며 여기에서 아무 것도 변경 될 수의 전달 보장 하지 않습니다.
+보시 우리의 [여기에서 현재 (최종이 아닌) 로드맵](https://portal.productboard.com/adaptivecards/1-adaptive-cards-portal/tabs/1-backlog)합니다. 에 불과하며 여기에서 아무 것도 변경 될 수의 전달 보장 하지 않습니다.
 
 ## <a name="future-ideas"></a>향후 아이디어
 

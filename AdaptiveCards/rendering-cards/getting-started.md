@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 0a9507c56a8bae9f038c220cdf55e34b2c3b0829
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552925"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138096"
 ---
 # <a name="rendering-cards-inside-your-application"></a>응용 프로그램 내에서 카드를 렌더링합니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "59552925"
 
 ## <a name="adaptive-cards-sdks"></a>Adaptive Card Sdk
 
-|플랫폼|Install|빌드|문서|상태|
+|플랫폼|Install|빌드|Docs|상태|
 |---|---|---|---|---|
 | JavaScript | [![npm 설치](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Docs](../sdk/rendering-cards/javascript/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
 | .NET WPF | [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Docs](../sdk/rendering-cards/net-wpf/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
@@ -60,7 +60,7 @@ A [HostConfig](host-config.md) 은 기본 스타일 지정 및 앱 내에서 카
 
 ### <a name="customize-per-element-rendering"></a>요소 마다 렌더링을 사용자 지정
 
-각 SDK를 사용 하면 모든 요소의 렌더링을 재정의 하거나 정의 하는 완전히 새로운 요소에 대 한 지원을 추가할 수 있습니다.  예를 들어, 변경할 수 있습니다는 `Input.Date` 렌더러 렌더러의 출력의 나머지 부분을 유지 하면서 사용자 고유의 사용자 지정 컨트롤을 내보낼 수 있습니다. 사용자 지정에 대 한 지원을 추가할 수 있습니다 또는 `Rating` 요소 수를 정의 합니다.
+각 SDK를 사용 하면 모든 요소의 렌더링을 재정의 하거나 정의 하는 완전히 새로운 요소에 대 한 지원을 추가할 수 있습니다.  예를 들어, 변경할 수 있습니다는 `Input.Date` 렌더러 렌더러의 출력의 나머지 부분을 유지 하면서 사용자 고유의 사용자 지정 컨트롤을 내보낼 수 있습니다. 사용자 지정에 대 한 지원을 추가할 수 있습니다 또는 `Rating` 정의 하는 요소입니다.
 
 
 
