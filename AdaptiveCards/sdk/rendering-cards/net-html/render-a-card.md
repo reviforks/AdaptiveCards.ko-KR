@@ -1,23 +1,23 @@
 ---
-title: .NET HTML SDK-카드를 렌더링 합니다.
+title: 카드 렌더링 - .NET HTML SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 8dc1baffb91f0755f1955ee02b8a3e820b0d34e4
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 1bc1a225fc731aeb8e66bde1ef21a9443e74c8b1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553105"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134176"
 ---
-# <a name="render-a-card---net-html"></a>카드-.NET HTML 렌더링
+# <a name="render-a-card---net-html"></a>카드 렌더링 - .NET HTML
 
-HTML.NET SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.
+.NET HTML SDK를 사용하여 카드를 렌더링하는 방법은 다음과 같습니다.
 
-## <a name="instantiate-a-renderer"></a>렌더러를 인스턴스화하십시오.
+## <a name="instantiate-a-renderer"></a>렌더러 인스턴스화
 
-다음 단계는 렌더러의 인스턴스를 만드는 것입니다. 
+다음 단계는 렌더러 인스턴스를 만드는 것입니다. 
 
 ```csharp
 using AdaptiveCards;
@@ -52,7 +52,7 @@ try
 
     // (Optional) Check for any renderer warnings
     // This includes things like an unknown element type found in the card
-    // Or the card exceeded the maxmimum number of supported actions, etc
+    // Or the card exceeded the maximum number of supported actions, etc
     IList<AdaptiveWarning> warnings = renderedCard.Warnings;
 }
 catch(AdaptiveException ex)
