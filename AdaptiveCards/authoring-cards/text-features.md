@@ -5,20 +5,20 @@ ms.author: mahiding
 ms.date: 11/09/2017
 ms.topic: article
 ms.openlocfilehash: ac8ec0c48e06377ebd17f1b31abe463c48809fe3
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "59553615"
 ---
 # <a name="text-features"></a>텍스트 기능
 
-`TextBlock` 서식 지정 및 텍스트를 지역화에 대 한 몇 가지 고급 기능을 제공 합니다.
+`TextBlock`은 텍스트의 서식을 지정하고 텍스트를 현지화할 수 있는 몇 가지 고급 기능을 제공합니다.
 
 ## <a name="markdown"></a>Markdown
-Adaptive Card 지원를 지원 하기 위해 인라인 태그를 **하위 집합** Markdown 구문의 합니다.
+적응형 카드는 인라인 변경 내용을 지원하기 위해 Markdown 구문의 **하위 집합**을 지원합니다.
 
-_지원_
+_지원됨_
 
 | 텍스트 스타일      | Markdown |
 |-----------------|-----|
@@ -28,18 +28,18 @@ _지원_
 | 번호가 매겨진 목록   | ```1. Green\r2. Orange\r3. Blue``` |
 | 하이퍼링크      | ```[Title](url)``` |
 
-_지원 되지 않음_
+_지원 안 됨_
 
 * 헤더
-* 테이블
+* 표
 * 이미지
-* 위의 테이블에 없는 항목
+* 위의 표에 없는 항목
 
 ### <a name="markdown-example"></a>Markdown 예제
 
-페이로드 아래은 다음과 같이 렌더링 됩니다.
+아래 페이로드는 다음과 같은 항목을 렌더링합니다.
 
-![markdown 스크린 샷](media/text-features/markdown.png)
+![Markdown 스크린샷](media/text-features/markdown.png)
 
 ```json
 {
@@ -73,11 +73,11 @@ _지원 되지 않음_
 }
 ```
 
-## <a name="datetime-formatting-and-localization"></a>날짜/시간 형식 및 지역화
+## <a name="datetime-formatting-and-localization"></a>날짜/시간 형식 지정 및 지역화
 
-Adaptive Card 제공 되므로 카드를 수신 하는 사용자의 표준 시간대를 알 수 없습니다 경우에 따라 `DATE()` 고 `TIME()` 자동으로 대상 장치에서 시간을 지역화 하는 함수를 서식 지정 합니다.
+카드를 수신하는 사용자의 표준 시간대를 모르는 경우가 있으므로 적응형 카드는 대상 디바이스의 시간을 자동으로 현지화하는 `DATE()` 및 `TIME()` 형식 지정 함수를 제공합니다.
 
-### <a name="datetime-example"></a>날짜/시간 예제
+### <a name="datetime-example"></a>날짜/시간 예
 
 ```json
 {
@@ -94,18 +94,18 @@ Adaptive Card 제공 되므로 카드를 수신 하는 사용자의 표준 시�
 }
 ```
 
-위의 카드 표시 됩니다. 
+위의 카드는 다음을 표시합니다. 
 
-> **2017 년 2 월 14, 화요일 오전 6 시에 패키지 도착**
+> **택배가 2017년 2월 14일 화요일 오전 6:00에 도착할 예정입니다.**
 
 ### <a name="datetime-function-rules"></a>날짜/시간 함수 규칙
 
-일부의 규칙이 제대로 해석 하는 모든 플랫폼에서 날짜/시간 함수. 원시 문자열 사용자에 게 표시 되 고 싶은는 다음 규칙을 충족 되지 않으면.
+모든 플랫폼에서 날짜/시간 함수를 올바르게 해석하기 위한 몇 가지 규칙이 있습니다. 규칙이 충족되지 않으면 사용자에게 원시 문자열이 표시됩니다. 누구도 원치 않는 상황일 것입니다.
 
-1. **대/소문자 구분** (모두 대문자 여야 함)
-1. **공백이** 간의 합니다 `{{`, `}}`, 또는 괄호
-1. **엄격한 [RFC 3389](https://tools.ietf.org/html/rfc3339) 서식** (아래 예제 참조)
-1. **해야** 올바른 날짜 및 시간
+1. **대/소문자 구분**(모두 대문자여야 함)
+1. `{{`, `}}` 또는 괄호 사이에 **공백 없음**
+1. **엄격한 [RFC 3389](https://tools.ietf.org/html/rfc3339) 형식 지정**(아래의 예 참조)
+1. **유효한 날짜 및 시간**이어야 함
 
 ### <a name="valid-formats"></a>유효한 형식
 
@@ -113,14 +113,14 @@ Adaptive Card 제공 되므로 카드를 수신 하는 사용자의 표준 시�
 * `2017-02-14T06:08:00-07:00`
 * `2017-02-14T06:08:00+07:00`
 
-### <a name="date-formatting-param"></a>날짜 매개 변수 형식 지정
+### <a name="date-formatting-param"></a>날짜 형식 지정 매개 변수
 
-날짜에 대 한 선택적 매개 변수는 출력의 서식을 지정할 수 있습니다.
+날짜의 경우 선택적 매개 변수를 지정하여 출력 형식을 지정할 수 있습니다.
 
 
-|       형식        |            예제            |
+|       형식        |            예            |
 |---------------------|-------------------------------|
-| `COMPACT` (기본값) |          "2/13/2017"          |
-|       `SHORT`       |     "Mon, Feb 13th, 2017"     |
-|       `LONG`        | "월요일, 2017 년 2 월 13" |
+| `COMPACT`(기본값) |          "2017/2/13"          |
+|       `SHORT`       |     "2017년 2월 13일 월"     |
+|       `LONG`        | "2017년 2월 13일 월요일" |
 

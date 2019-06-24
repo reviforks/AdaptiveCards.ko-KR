@@ -1,19 +1,19 @@
 ---
-title: Actions - Android SDK
+title: 작업 - Android SDK
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: b823b139a706e5149ff1cabc672f57cede4bfa33
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552545"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134268"
 ---
-# <a name="actions---android"></a>작업-Android
+# <a name="actions---android"></a>작업 - Android
 
-카드 작업이 실행 되어 ICardActionHandler 인터페이스를 구현 하는 렌더링 호출에 전달 된 클래스 호출을 가져옵니다. 작업 처리기를 정의 하는 방법을 다음과 같습니다.
+카드 작업이 실행되면 ICardActionHandler 인터페이스를 구현하는 렌더링 호출로 전달된 클래스가 호출됩니다. 작업 처리기를 정의하는 방법은 다음과 같습니다.
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -109,3 +109,15 @@ public class ActionHandler implements ICardActionHandler
     }
 }
 ```
+
+> [!IMPORTANT]
+> **v1.1의 주요 변경 내용**
+> 
+> 1. 이 버전에 포함된 미디어 요소를 사용하려면 ICardActionHandler를 구현하는 클래스를 통해 다음과 같은 두 가지 새 메서드를 구현해야 합니다.
+>
+> ```java
+> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> ```
+>
+> onMediaPlay 메서드는 아무 미디어 요소에서 처음으로 재생 단추를 누를 때 호출되고, onMediaStop 메서드는 미디어가 끝부분에 도달할 때 호출됩니다.
