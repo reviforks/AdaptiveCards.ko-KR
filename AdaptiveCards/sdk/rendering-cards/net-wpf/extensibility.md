@@ -1,23 +1,23 @@
 ---
-title: 확장성-.NET WPF SDK
+title: 확장성 - .NET WPF SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: af301ec4d73b6791c1d132b9df7040d71cf70d7b
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 4f89784f711727deb538b2ed2195007ca8e6aca1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552625"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134315"
 ---
-# <a name="extensibility---net-wpf"></a><span data-ttu-id="f3c78-102">확장성-.NET WPF</span><span class="sxs-lookup"><span data-stu-id="f3c78-102">Extensibility - .NET WPF</span></span>
+# <a name="extensibility---net-wpf"></a><span data-ttu-id="59f21-102">확장성 - .NET WPF</span><span class="sxs-lookup"><span data-stu-id="59f21-102">Extensibility - .NET WPF</span></span>
 
-## <a name="custom-element-rendering"></a><span data-ttu-id="f3c78-103">사용자 지정 요소 렌더링</span><span class="sxs-lookup"><span data-stu-id="f3c78-103">Custom Element Rendering</span></span>
+## <a name="custom-element-rendering"></a><span data-ttu-id="59f21-103">사용자 지정 요소 렌더링</span><span class="sxs-lookup"><span data-stu-id="59f21-103">Custom Element Rendering</span></span>
 
-<span data-ttu-id="f3c78-104">렌더러의 전체 컨트롤에 대해 사용할 수 있습니다 합니다 `ElementRenderers` 속성을 **추가**를 **제거**, 또는 **재정의** 렌더러 기본입니다.</span><span class="sxs-lookup"><span data-stu-id="f3c78-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
+<span data-ttu-id="59f21-104">렌더러를 완벽하게 제어하려면 `ElementRenderers` 속성을 사용하여 기본 렌더러를 **추가**, **제거** 또는 **재정의**하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="59f21-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
 
-<span data-ttu-id="f3c78-105">다음 예제에서는 사용자 지정을 정의 하는 방법을 보여 줍니다. `"type": "Rating"` 요소 및 렌더링 합니다.</span><span class="sxs-lookup"><span data-stu-id="f3c78-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
+<span data-ttu-id="59f21-105">다음 예제에서는 사용자 지정 `"type": "Rating"` 요소를 정의하고 렌더링하는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="59f21-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
 
 ```csharp
 // Register the new type with the JSON parser
@@ -29,9 +29,9 @@ renderer.ElementRenderers.Set<MyCustomRating>(MyCustomRating.Render);
 // Define a custom Rating element type
 public class MyCustomRating : AdaptiveElement
 {
-    public override string Type => "Rating";
+    public MyCustomRating() { Type = "Rating"; }
 
-    public double Rating { get; set; }
+    public override string Type { get; set; }
 
     public AdaptiveTextSize Size { get; set; }
 
