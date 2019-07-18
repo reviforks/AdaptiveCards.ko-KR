@@ -4,14 +4,21 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 378171186599dd8d103111da183b7fc2e6e01c42
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: ca92f0a2b6ef8a36c5394e4dd9853df59fef22b2
+ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134254"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299550"
 ---
 # <a name="extensibility---android"></a>확장성 - Android
+
+Android 렌더러를 확장 하 여 다음과 같은 여러 가지 시나리오를 지원할 수 있습니다.
+* [카드 요소의 사용자 지정 구문 분석](#custom-parsing-of-card-elements)
+* [카드 요소의 사용자 지정 렌더링](#custom-rendering-of-card-elements)
+* [작업의 사용자 지정 렌더링](#custom-rendering-of-actions) (V 1.2 이후)
+* [사용자 지정 이미지 로드](#custom-image-loading) (V 1.0.1 이후)
+* [사용자 지정 미디어 로드](#custom-media-loading) (V 1.1 이후)
 
 ## <a name="custom-parsing-of-card-elements"></a>카드 요소의 사용자 지정 구문 분석
 
@@ -78,7 +85,13 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 
 ## <a name="custom-rendering-of-card-elements"></a>카드 요소의 사용자 지정 렌더링
 
-이 형식의 고유한 사용자 지정 렌더러를 정의하려면 먼저 다음과 같이 BaseCardElementParser에서 확장되는 클래스를 만들어야 합니다.
+> [!IMPORTANT]
+>
+> **주요 변경 내용 목록**
+>
+> [v1.2의 주요 변경 내용](#breaking-changes-for-v12)
+
+형식에 대 한 고유한 사용자 지정 렌더러를 정의 하려면 먼저에서 ```BaseCardElementRenderer```확장 되는 클래스를 만들어야 합니다.
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -104,7 +117,140 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 ```java
 CardRendererRegistration.getInstance().registerRenderer("MyType", new CustomBlahRenderer());
 
-RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, getSupportFragmentManager(), adaptiveCard, cardActionHandler, new HostConfig());
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler,  hostConfig);
+```
+
+### <a name="breaking-changes-for-v12"></a>V 1.2의 주요 변경 내용
+
+메서드가 매개 변수를 포함 하도록 변경 되었으며 이제 ContainerStyle이 포함 된 renderargs에 대해 변경 되었으므로BaseCardElementRenderer을확장하는클래스가다음과같이표시됩니다.```ContainerStyle``` ```RenderedAdaptiveCard``` ```render```
+
+```
+public class MyCardElementRenderer extends BaseCardElementRenderer
+{
+    @Override
+    public View render(RenderedAdaptiveCard renderedAdaptiveCard, Context context, FragmentManager fragmentManager, ViewGroup viewGroup,
+                       BaseCardElement baseCardElement, ICardActionHandler cardActionHandler, HostConfig hostConfig, RenderArgs renderArgs)
+    { }
+}
+```
+
+## <a name="custom-parsing-of-card-actions"></a>카드 작업의 사용자 지정 구문 분석
+
+사용자 지정 작업을 구문 분석할 수 있는 기능을 제공 하는 것과 유사 하 게 사용자 지정 카드 요소를 예를 들어 다음과 같은 새 동작 형식이 있다고 가정 합니다.
+```json
+{
+    "type" : "MyAction",
+    "ActionData" : "My data"
+}
+```
+
+다음 줄에서는에서 ```BaseActionElement```확장 되는 actionelement로 구문 분석 하는 방법을 보여 줍니다.
+```java
+public class MyActionElement extends BaseActionElement
+{
+    public MyActionElement(ActionType type) 
+    {
+        super(type);
+    }
+
+    public String getActionData()
+    {
+        return mActionData;
+    }
+
+    public void setActionData(String s)
+    {
+        mActionData = s;
+    }
+
+    private String mActionData;
+    public static final String MyActionId = "myAction";
+}
+
+public class MyActionParser extends ActionElementParser
+{
+    @Override
+    public BaseActionElement Deserialize(ParseContext context, JsonValue value)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        String val = value.getString();
+        try {
+            JSONObject obj = new JSONObject(val);
+            element.setActionData(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setActionData("Failure");
+        }
+        return element;
+    }
+
+    @Override
+    public BaseActionElement DeserializeFromString(ParseContext context, String jsonString)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        try {
+            JSONObject obj = new JSONObject(jsonString);
+            element.setBackwardString(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setBackwardString("Failure");
+        }
+        return element;
+    }
+}
+```
+
+다음 줄은 파서를 등록 하 고 사용자 지정 동작 요소를 포함 하는 AdaptiveCard 개체를 가져오는 방법을 보여 줍니다.
+```java
+// Create an ActionParserRegistration and add your parser to it
+ActionParserRegistration actionParserRegistration = new ActionParserRegistration();
+actionParserRegistration.AddParser(MyActionElement.MyActionId, new MyActionParser());
+
+ParseContext context = new ParseContext(null, actionParserRegistration);
+ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveCardRenderer.VERSION, context);
+```
+
+다음에는 사용자 지정 작업 렌더링을 제공 합니다.
+
+## <a name="custom-rendering-of-actions"></a>작업의 사용자 지정 렌더링
+
+형식에 대 한 고유한 사용자 지정 작업 렌더러를 정의 하려면 먼저에서 ```BaseActionElementRenderer```확장 되는 클래스를 만들어야 합니다.
+```java
+public class MyActionRenderer extends BaseActionElementRenderer
+{
+    @Override
+    public Button render(RenderedAdaptiveCard renderedCard,
+                         Context context,
+                         FragmentManager fragmentManager,
+                         ViewGroup viewGroup,
+                         BaseActionElement baseActionElement,
+                         ICardActionHandler cardActionHandler,
+                         HostConfig hostConfig,
+                         RenderArgs renderArgs)
+    {
+        Button myActionButton = new Button(context);
+
+        CustomActionElement customAction = (CustomActionElement) baseActionElement.findImplObj();
+
+        myActionButton.setBackgroundColor(getResources().getColor(R.color.greenActionColor));
+        myActionButton.setText(customAction.getMessage());
+        myActionButton.setAllCaps(false);
+        myActionButton.setOnClickListener(new BaseActionElementRenderer.ActionOnClickListener(renderedCard, baseActionElement, cardActionHandler));
+
+        viewGroup.addView(myActionButton);
+
+        return myActionButton;
+    }
+}
+```
+
+그 후 다음과 같이 이 렌더러를 등록합니다.
+```java
+CardRendererRegistration.getInstance().registerActionRenderer("myAction", new CustomActionRenderer());
+
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler, hostConfig);
 ```
 
 ## <a name="custom-rendering-of-actions"></a>작업의 사용자 지정 렌더링
@@ -233,13 +379,14 @@ IResourceResolver의 메서드를 IOnlineImageLoader와 최대한 비슷하게 �
 ```
 
 보시는 것처럼, 가장 큰 변화는 다음과 같습니다.
-* loadOnlineImage(문자열, GenericImageLoaderAsync)가 resolveImageResource(문자열, GenericImageLoaderAsync)로 변경되었습니다.
-* 최대 너비가 필요한 시나리오를 지원하기 위해 resolveImageResource(문자열, GenericImageLoaderAsync)의 오버로드가 resolveImageResource(문자열, GenericImageLoaderAsync, int)로 추가되었습니다.
+
+* ```loadOnlineImage(String, GenericImageLoaderAsync)```이름이로 바뀜```resolveImageResource(String, GenericImageLoaderAsync)```
+* 최대 너비가 필요한 ```resolveImageResource(String, GenericImageLoaderAsync)``` 시나리오를 지원 ```resolveImageResource(String, GenericImageLoaderAsync, int)``` 하기 위해에 대 한 오버 로드가 추가 되었습니다.
 
 ## <a name="custom-media-loading"></a>사용자 지정 미디어 로드
 
 > [!IMPORTANT]
-> **IOnlineMediaLoader에 필요한 MediaDataSource가 API 레벨 23 또는 Android M에 추가되었습니다.**
+> **API ```IOnlineMediaLoader``` 레벨 ```MediaDataSource``` 23 또는 Android M에서 추가 된 요구 사항 명심**
 
 미디어 요소가 포함되면서, 개발자가 기본 mediaPlayer 요소에 사용되는 [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource)를 재정의할 수 있도록 IOnlineMediaLoader 인터페이스도 포함되었습니다. **(Android M 필요)**
 
