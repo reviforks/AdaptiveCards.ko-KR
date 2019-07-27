@@ -4,24 +4,16 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/01/2017
 ms.topic: article
-ms.openlocfilehash: fa86d83a8f20490ec286b69653099ac8cd81b8ef
-ms.sourcegitcommit: 4d80c553ab574befa8c84706fd85d22077915745
+ms.openlocfilehash: fb1a79da288cbce77c4f684b384982feb96e7a8c
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387351"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523845"
 ---
 # <a name="net-sdk-for-authoring-cards"></a>제작 카드용 .NET SDK
 
 [시작](../../authoring-cards/getting-started.md) 페이지에서 설명한 대로 적응 카드는 JSON 개체 모델입니다. .NET 라이브러리를 사용 하면 해당 JSON을 훨씬 쉽게 사용할 수 있습니다.
-
-> [!IMPORTANT]
-> **V 0.5의 주요 변경 내용**
-> 
-> 1. 에서 `Microsoft.AdaptiveCards` 로 이름이 바뀐 패키지`AdaptiveCards`
-> 1. 프레임 워크 유형과 자주 이름이 충돌 하기 때문에 모든 모델 클래스에는 "적응" 접두사가 붙습니다. `TextBlock` 예: 이제`AdaptiveTextBlock`
-> 1. 모든 "uri" 속성이 형식 `string` 에서로 변경 되었습니다.`Uri`
-> 1. [여기에 설명](https://github.com/Microsoft/AdaptiveCards/pull/633) 된 v 0.5 미리 보기의 일부 스키마도 변경 되었습니다.
 
 
 ## <a name="nuget-install"></a>NuGet 설치
@@ -30,7 +22,7 @@ NuGet `AdaptiveCards` 패키지는 .net에서 적응 카드로 작업 하기 위
 [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.svg)](https://www.nuget.org/packages/AdaptiveCards)
 
 ```console
-Install-Package AdaptiveCards -IncludePrerelease
+Install-Package AdaptiveCards
 ```
 
 ## <a name="example-create-an-adaptivecard-and-serialize-to-json"></a>예: AdaptiveCard 만들기 및 JSON으로 직렬화

@@ -1,64 +1,44 @@
 ---
-title: Adaptive Card 용 JavaScript SDK
+title: 적응 카드용 JavaScript SDK
 author: matthidinger
 ms.author: mahiding
-ms.date: 06/26/2017
+ms.date: 07/26/2019
 ms.topic: article
-ms.openlocfilehash: 6372f2f23a817ecc4d07d950d6513d14357547b7
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 039171d895fac0975bf9eff4fe84fdf8b6f7e4af
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552665"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523832"
 ---
 # <a name="javascript-sdk-for-creating-cards"></a>카드를 만들기 위한 JavaScript SDK
 
 > [!IMPORTANT]
-> JSON 직렬화 라이브러리는 아직 개발 및 사용자 milage 다를 수 있습니다.
+> JSON을 serialize 하는 라이브러리는 아직 개발 중 이며 milage 달라질 수 있습니다.
 
-에 설명 된 것 처럼 섹션을 시작 하기를 adaptive card 뿐 다음 카드 개체 모델의 serialize 된 json 개체.  개체 모델을 조작할 수 있도록 하려면 json 직렬화/역직렬화 하기 쉬운 강력한 형식의 클래스 계층 구조를 정의 하는 일부 라이브러리 정의 했습니다.
+[시작](../../authoring-cards/getting-started.md)에서 설명한 바와 같이 적응 카드는 카드 개체 모델의 직렬화 된 JSON 개체에 해당 하는 것이 아닙니다.  개체 모델을 쉽게 조작할 수 있도록 하기 위해 json을 쉽게 직렬화/역직렬화 할 수 있는 강력한 형식의 클래스 계층 구조를 정의 하는 몇 가지 라이브러리를 정의 했습니다.
 
-적응 카드 json 만들려면 어떤 도구를 사용할 수 있습니다.
+적응 카드 json을 만들려는 모든 도구를 사용할 수 있습니다.
 
-`adaptivecards` javascript에서 adaptive card를 사용 하 여 작업에 대 한 라이브러리를 정의 하는 npm 패키지
+Npm `adaptivecards` 패키지는 javascript에서 적응 카드로 작업 하기 위한 라이브러리를 정의 합니다.
 
 ## <a name="to-install"></a>설치 하려면
 ```console
 npm install adaptivecards
 ```
 
-## <a name="example-creating"></a>예제 만들기 
-에 대 한 인터페이스 정의가 `schema.d.ts` 스키마의 모양을 설명 하는
+## <a name="example"></a>예제
+
+다음 API는 개체 모델을 사용 하 여 적응 카드를 생성 하 고이를 JSON으로 serialize 하는 방법을 보여 줍니다.
 
 ```typescript
-let card = {
-    "type": "AdaptiveCard",
-    "version": "1.0",
-    "body": [
-        {
-            "type": "Container",
-            "items": [
-                {
-                    "type": "TextBlock",
-                    "text": "Meow!"
-                },
-                {
-                    "type": "Image",
-                    "url": "http://adaptivecards.io/content/cats/1.png"
-                }
-            ]
-        }
-    ]
-};
-```
+let card = new Adaptive.AdaptiveCard();
+card.version = new Adaptive.Version(1, 0);
 
-카드를 만들기 위한 개체 모델 이기도 합니다.
+let textBlock = new Adaptive.TextBlock();
+textBlock.text = "Hello World";
 
+card.addItem(textBlock);
 
-```typescript
-let card :IAdaptiveCard =  new AdaptiveCard();
-card.body.add(new TextBlock() 
-{
-    text = "hello world"
-});
+let json = card.toJSON();
 ```
