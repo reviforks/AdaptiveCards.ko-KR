@@ -38,13 +38,15 @@
       href: sdk/authoring-cards/toc.yml
     - name: 렌더링 카드
       href: sdk/rendering-cards/toc.yml
+    - name: Designer SDK
+      href: sdk/designer.md
 - name: 템플릿(미리 보기)
   items:
     - name: 개요
       href: templating/index.md
     - name: 템플릿 언어
       href: templating/language.md
-    - name: SDK
+    - name: 템플릿 생성용 SDK
       href: templating/sdk.md
     - name: 템플릿 서비스
       href: templating/service.md
