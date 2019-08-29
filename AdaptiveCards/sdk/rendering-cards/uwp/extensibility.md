@@ -11,11 +11,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553045"
 ---
-# <a name="extensibility---uwp"></a><span data-ttu-id="8a8e4-102">확장성-UWP</span><span class="sxs-lookup"><span data-stu-id="8a8e4-102">Extensibility - UWP</span></span>
+# <a name="extensibility---uwp"></a><span data-ttu-id="671fa-102">확장성-UWP</span><span class="sxs-lookup"><span data-stu-id="671fa-102">Extensibility - UWP</span></span>
 
-## <a name="changing-per-element-rendering"></a><span data-ttu-id="8a8e4-103">요소 렌더링 당 변경</span><span class="sxs-lookup"><span data-stu-id="8a8e4-103">Changing per element rendering</span></span>
+## <a name="changing-per-element-rendering"></a><span data-ttu-id="671fa-103">요소 렌더링 별 변경</span><span class="sxs-lookup"><span data-stu-id="671fa-103">Changing per element rendering</span></span>
 
-<span data-ttu-id="8a8e4-104">렌더러 클래스를 구현 및 렌더러에 설정</span><span class="sxs-lookup"><span data-stu-id="8a8e4-104">Implement a renderer class and set it in the renderer</span></span>
+<span data-ttu-id="671fa-104">렌더러 클래스를 구현 하 고 렌더러에 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="671fa-104">Implement a renderer class and set it in the renderer</span></span>
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

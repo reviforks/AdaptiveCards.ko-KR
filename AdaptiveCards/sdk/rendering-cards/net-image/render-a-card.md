@@ -1,5 +1,5 @@
 ---
-title: .NET 이미지 렌더링 SDK-카드를 렌더링 합니다.
+title: 카드 렌더링-.NET 이미지 렌더링 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,9 +11,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552495"
 ---
-# <a name="render-a-card---net-image"></a><span data-ttu-id="e0473-102">카드-.NET 이미지 렌더링</span><span class="sxs-lookup"><span data-stu-id="e0473-102">Render a card - .NET Image</span></span>
+# <a name="render-a-card---net-image"></a><span data-ttu-id="cd194-102">카드 렌더링-.NET 이미지</span><span class="sxs-lookup"><span data-stu-id="cd194-102">Render a card - .NET Image</span></span>
 
-<span data-ttu-id="e0473-103">.NET 이미지 SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="e0473-103">Here's how to render a card using the .NET Image SDK.</span></span>
+<span data-ttu-id="cd194-103">.NET 이미지 SDK를 사용 하 여 카드를 렌더링 하는 방법은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="cd194-103">Here's how to render a card using the .NET Image SDK.</span></span>
 
 ```csharp
 try

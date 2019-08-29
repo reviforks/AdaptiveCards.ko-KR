@@ -1,5 +1,5 @@
 ---
-title: UWP SDK 작업
+title: 작업-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552975"
 ---
-# <a name="actions---uwp"></a><span data-ttu-id="0e935-102">UWP 작업</span><span class="sxs-lookup"><span data-stu-id="0e935-102">Actions - UWP</span></span>
+# <a name="actions---uwp"></a><span data-ttu-id="1952b-102">작업-UWP</span><span class="sxs-lookup"><span data-stu-id="1952b-102">Actions - UWP</span></span>
 
-<span data-ttu-id="0e935-103">모든 **동작** 카드 내에서 UWP로 렌더링 됩니다 **단추**의 사용자가 ShowCard 작업... (제외 누를 때 발생 하는 새로운 처리할 앱에 달려 있지만 자세한 내용은 용 코드 조각 참조).</span><span class="sxs-lookup"><span data-stu-id="0e935-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
+<span data-ttu-id="1952b-103">카드 내의 모든 **작업** 은 UWP **단추로**렌더링 되지만 사용자가 해당 작업을 누를 때 발생 하는 상황을 처리 하기 위해 앱에 있습니다 (showcard 작업 ... 자세한 내용은 코드 조각을 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="1952b-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
 
-<span data-ttu-id="0e935-104">합니다 `RenderedAdaptiveCard` 개체를 제공는 `Action` 이 목적을 위해 이벤트입니다.</span><span class="sxs-lookup"><span data-stu-id="0e935-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
+<span data-ttu-id="1952b-104">`RenderedAdaptiveCard` 개체는 이 용도를 위한 `Action` 이벤트를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="1952b-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
 
 ```csharp
 // Render a card (as previously shown)

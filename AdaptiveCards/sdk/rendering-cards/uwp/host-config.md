@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553675"
 ---
-# <a name="host-config---uwp"></a><span data-ttu-id="0de4a-102">호스트 구성-UWP</span><span class="sxs-lookup"><span data-stu-id="0de4a-102">Host config - UWP</span></span>
+# <a name="host-config---uwp"></a><span data-ttu-id="4e217-102">호스트 구성-UWP</span><span class="sxs-lookup"><span data-stu-id="4e217-102">Host config - UWP</span></span>
 
-<span data-ttu-id="0de4a-103">렌더러에 맞게 HostConfig 개체의 인스턴스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="0de4a-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="0de4a-104">(참조 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 전체 설명 합니다.)</span><span class="sxs-lookup"><span data-stu-id="0de4a-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
+<span data-ttu-id="4e217-103">렌더러를 사용자 지정 하려면 HostConfig 개체의 인스턴스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="4e217-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="4e217-104">전체 설명은 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="4e217-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
 
-> <span data-ttu-id="0de4a-105">HostConfig 개체를 변경 하려는 속성만 설정할 수 있는 기본값을 사용 하 여 인스턴스화할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0de4a-105">The HostConfig object will be instantiated with defaults, so you can set just the properties you want to change.</span></span>
+> <span data-ttu-id="4e217-105">HostConfig 개체는 기본값으로 인스턴스화되기 때문에 변경 하려는 속성만 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4e217-105">The HostConfig object will be instantiated with defaults, so you can set just the properties you want to change.</span></span>
 
-<span data-ttu-id="0de4a-106">예:</span><span class="sxs-lookup"><span data-stu-id="0de4a-106">Example:</span></span>
+<span data-ttu-id="4e217-106">예:</span><span class="sxs-lookup"><span data-stu-id="4e217-106">Example:</span></span>
 
 ```csharp
 var hostConfig = new AdaptiveHostConfig() 
@@ -33,9 +33,9 @@ var hostConfig = new AdaptiveHostConfig()
 renderer.HostConfig = hostConfig;
 ```
 
-> <span data-ttu-id="0de4a-107">또는 JSON 문자열에서는 HostConfig를 로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0de4a-107">Alternatively, you can load the HostConfig from a JSON string.</span></span>
+> <span data-ttu-id="4e217-107">또는 JSON 문자열에서 HostConfig를 로드할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4e217-107">Alternatively, you can load the HostConfig from a JSON string.</span></span>
 
-<span data-ttu-id="0de4a-108">예:</span><span class="sxs-lookup"><span data-stu-id="0de4a-108">Example:</span></span>
+<span data-ttu-id="4e217-108">예:</span><span class="sxs-lookup"><span data-stu-id="4e217-108">Example:</span></span>
 
 ```csharp
 var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString); 
@@ -43,4 +43,4 @@ var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString);
 renderer.HostConfig = hostConfig;
 ```
 
-<span data-ttu-id="0de4a-109">UWPRenderer에 전달할 때 HostConfig 모든 카드를 렌더링 하는 데 기본을 설정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0de4a-109">When you pass it in to the UWPRenderer you are setting the default HostConfig to use for every card you render.</span></span>
+<span data-ttu-id="4e217-109">UWPRenderer에 전달할 때 렌더링 하는 모든 카드에 사용할 기본 HostConfig를 설정 하 게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4e217-109">When you pass it in to the UWPRenderer you are setting the default HostConfig to use for every card you render.</span></span>

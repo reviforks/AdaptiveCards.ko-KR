@@ -11,6 +11,6 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553445"
 ---
-# <a name="host-config---net-image"></a><span data-ttu-id="7a5d4-102">호스트 구성-.NET 이미지</span><span class="sxs-lookup"><span data-stu-id="7a5d4-102">Host config - .NET Image</span></span>
+# <a name="host-config---net-image"></a><span data-ttu-id="7a259-102">호스트 구성-.NET 이미지</span><span class="sxs-lookup"><span data-stu-id="7a259-102">Host config - .NET Image</span></span>
 
-<span data-ttu-id="7a5d4-103">참조 된 [WPF docs](../net-wpf/getting-started.md) 이러한 옵션의 전체 run-down에 대 한 합니다.</span><span class="sxs-lookup"><span data-stu-id="7a5d4-103">See the [WPF docs](../net-wpf/getting-started.md) for a full run-down of these options.</span></span>
+<span data-ttu-id="7a259-103">이러한 옵션의 전체 실행은 [WPF 문서](../net-wpf/getting-started.md) 를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="7a259-103">See the [WPF docs](../net-wpf/getting-started.md) for a full run-down of these options.</span></span>

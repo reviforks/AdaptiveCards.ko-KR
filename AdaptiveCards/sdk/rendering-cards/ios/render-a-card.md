@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67134324"
 ---
-# <a name="render-a-card---ios"></a><span data-ttu-id="57e5e-102">카드 렌더링 - iOS</span><span class="sxs-lookup"><span data-stu-id="57e5e-102">Render a card - iOS</span></span>
+# <a name="render-a-card---ios"></a><span data-ttu-id="9385b-102">카드 렌더링 - iOS</span><span class="sxs-lookup"><span data-stu-id="9385b-102">Render a card - iOS</span></span>
 
-<span data-ttu-id="57e5e-103">iOS SDK를 사용하여 카드를 렌더링하는 방법은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-103">Here's how to render a card using the iOS SDK.</span></span>
+<span data-ttu-id="9385b-103">iOS SDK를 사용하여 카드를 렌더링하는 방법은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-103">Here's how to render a card using the iOS SDK.</span></span>
 
-## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="57e5e-104">JSON 문자열에서 카드 만들기</span><span class="sxs-lookup"><span data-stu-id="57e5e-104">Create a card from a JSON string</span></span>
+## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="9385b-104">JSON 문자열에서 카드 만들기</span><span class="sxs-lookup"><span data-stu-id="9385b-104">Create a card from a JSON string</span></span>
 
-<span data-ttu-id="57e5e-105">AdaptiveCard는 JSON 문자열에서 생성</span><span class="sxs-lookup"><span data-stu-id="57e5e-105">AdaptiveCard is generated from JSON string</span></span>
+<span data-ttu-id="9385b-105">AdaptiveCard는 JSON 문자열에서 생성</span><span class="sxs-lookup"><span data-stu-id="9385b-105">AdaptiveCard is generated from JSON string</span></span>
 
 ```objective-c
 
@@ -29,11 +29,11 @@ NSArray<NSError *> errors = cardParseResult.parseErrors;
 NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="57e5e-106">카드 렌더링</span><span class="sxs-lookup"><span data-stu-id="57e5e-106">Render a Card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="9385b-106">카드 렌더링</span><span class="sxs-lookup"><span data-stu-id="9385b-106">Render a Card</span></span>
 
-<span data-ttu-id="57e5e-107">렌더러는 적응형 카드와 호스트 구성을 사용합니다. HostConfig는 nil일 수 있으며, nil인 경우 기본값이 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
-<span data-ttu-id="57e5e-108">반환된 UIView는 자동 레이아웃을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="57e5e-109">너비는 widthConstraint에서 설정한 값에 따라 제한됩니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="57e5e-110">0 값을 사용하면 바인딩되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-110">If 0 value is used, it won't be bound.</span></span>
-<span data-ttu-id="57e5e-111">높이가 바인딩되지 않으며, 반환될 때 렌더링된 모든 콘텐츠의 합이 높이로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="57e5e-112">새 차원을 바인딩하려면 NSLayoutConstraint를 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="57e5e-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="57e5e-113">정확한 차원은 상위 보기 viewcontroller의 viewDidLayoutSubview 컨텍스트에서 또는 ACRViewController가 사용되는 경우 이름이 같은 메서드에서 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="57e5e-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
+<span data-ttu-id="9385b-107">렌더러는 적응형 카드와 호스트 구성을 사용합니다. HostConfig는 nil일 수 있으며, nil인 경우 기본값이 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
+<span data-ttu-id="9385b-108">반환된 UIView는 자동 레이아웃을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="9385b-109">너비는 widthConstraint에서 설정한 값에 따라 제한됩니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="9385b-110">0 값을 사용하면 바인딩되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-110">If 0 value is used, it won't be bound.</span></span>
+<span data-ttu-id="9385b-111">높이가 바인딩되지 않으며, 반환될 때 렌더링된 모든 콘텐츠의 합이 높이로 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="9385b-112">새 차원을 바인딩하려면 NSLayoutConstraint를 사용하세요.</span><span class="sxs-lookup"><span data-stu-id="9385b-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="9385b-113">정확한 차원은 상위 보기 viewcontroller의 viewDidLayoutSubview 컨텍스트에서 또는 ACRViewController가 사용되는 경우 이름이 같은 메서드에서 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="9385b-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
 
 ```objective-c
 ACRRenderResult *renderResult;
@@ -41,7 +41,7 @@ if(cardParseResult.isValid){
     renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
 }
 ``` 
-### <a name="example"></a><span data-ttu-id="57e5e-114">예</span><span class="sxs-lookup"><span data-stu-id="57e5e-114">Example</span></span>
+### <a name="example"></a><span data-ttu-id="9385b-114">예제</span><span class="sxs-lookup"><span data-stu-id="9385b-114">Example</span></span>
 
 ```objective-c
 --------------------------------------------------------------------------------

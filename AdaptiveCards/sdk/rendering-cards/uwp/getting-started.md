@@ -11,28 +11,28 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552905"
 ---
-# <a name="getting-started---uwp"></a><span data-ttu-id="b1c2c-102">가져오기 시작-UWP</span><span class="sxs-lookup"><span data-stu-id="b1c2c-102">Getting started - UWP</span></span>
+# <a name="getting-started---uwp"></a><span data-ttu-id="9816a-102">시작 하기-UWP</span><span class="sxs-lookup"><span data-stu-id="9816a-102">Getting started - UWP</span></span>
 
-<span data-ttu-id="b1c2c-103">대상 UWP 네이티브 컨트롤 렌더러를입니다.</span><span class="sxs-lookup"><span data-stu-id="b1c2c-103">This is a renderer which targets UWP native controls.</span></span>
+<span data-ttu-id="9816a-103">이 렌더러는 UWP 네이티브 컨트롤을 대상으로 합니다.</span><span class="sxs-lookup"><span data-stu-id="9816a-103">This is a renderer which targets UWP native controls.</span></span>
 
-## <a name="install-nuget-package"></a><span data-ttu-id="b1c2c-104">NuGet 패키지 설치</span><span class="sxs-lookup"><span data-stu-id="b1c2c-104">Install NuGet package</span></span>
+## <a name="install-nuget-package"></a><span data-ttu-id="9816a-104">NuGet 패키지 설치</span><span class="sxs-lookup"><span data-stu-id="9816a-104">Install NuGet package</span></span>
 
-<span data-ttu-id="b1c2c-105">**AdaptiveCards.Rendering.Uwp**</span><span class="sxs-lookup"><span data-stu-id="b1c2c-105">**AdaptiveCards.Rendering.Uwp**</span></span>
+<span data-ttu-id="9816a-105">**AdaptiveCards**</span><span class="sxs-lookup"><span data-stu-id="9816a-105">**AdaptiveCards.Rendering.Uwp**</span></span>
 
-<span data-ttu-id="b1c2c-106">[![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp)</span><span class="sxs-lookup"><span data-stu-id="b1c2c-106">[![Nuget install](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp)</span></span>
+<span data-ttu-id="9816a-106">[![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp)</span><span class="sxs-lookup"><span data-stu-id="9816a-106">[![Nuget install](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp)</span></span>
 
 ```console
 Install-Package AdaptiveCards.Rendering.Uwp
 ```
 
-## <a name="namespace"></a><span data-ttu-id="b1c2c-107">Namespace</span><span class="sxs-lookup"><span data-stu-id="b1c2c-107">Namespace</span></span>
+## <a name="namespace"></a><span data-ttu-id="9816a-107">Namespace</span><span class="sxs-lookup"><span data-stu-id="9816a-107">Namespace</span></span>
 
-<span data-ttu-id="b1c2c-108">렌더러 네임 스페이스를 선언 합니다.</span><span class="sxs-lookup"><span data-stu-id="b1c2c-108">Declare the renderer namespace.</span></span>
+<span data-ttu-id="9816a-108">렌더러 네임 스페이스를 선언 합니다.</span><span class="sxs-lookup"><span data-stu-id="9816a-108">Declare the renderer namespace.</span></span>
 
 ```csharp
 using AdaptiveCards.Rendering.Uwp;
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="b1c2c-109">다음 단계</span><span class="sxs-lookup"><span data-stu-id="b1c2c-109">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="9816a-109">다음 단계</span><span class="sxs-lookup"><span data-stu-id="9816a-109">Next steps</span></span>
 
-<span data-ttu-id="b1c2c-110">참조 [카드를 렌더링할](render-a-card.md) 다음 단계!</span><span class="sxs-lookup"><span data-stu-id="b1c2c-110">See [Render a card](render-a-card.md) for the next steps!</span></span>
+<span data-ttu-id="9816a-110">[카드 렌더링](render-a-card.md)에서 다음 단계를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="9816a-110">See [Render a card](render-a-card.md) for the next steps!</span></span>

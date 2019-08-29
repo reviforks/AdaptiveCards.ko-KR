@@ -11,16 +11,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552635"
 ---
-# <a name="extensibility---javascript"></a><span data-ttu-id="a4680-102">확장성-JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4680-102">Extensibility - JavaScript</span></span>
+# <a name="extensibility---javascript"></a><span data-ttu-id="8b6c2-102">확장성-JavaScript</span><span class="sxs-lookup"><span data-stu-id="8b6c2-102">Extensibility - JavaScript</span></span>
 
-## <a name="implement-and-register-a-custom-element"></a><span data-ttu-id="a4680-103">구현 하 고 사용자 지정 요소를 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-103">Implement and register a custom element</span></span>
+## <a name="implement-and-register-a-custom-element"></a><span data-ttu-id="8b6c2-103">사용자 지정 요소 구현 및 등록</span><span class="sxs-lookup"><span data-stu-id="8b6c2-103">Implement and register a custom element</span></span>
 
-<span data-ttu-id="a4680-104">사용자 지정 Adaptive Card 요소 형식을 만드는 단계는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-104">The steps for creating a custom Adaptive Card element type are:</span></span>
-- <span data-ttu-id="a4680-105">구동 하는 새 클래스 만들기 `CardElement`</span><span class="sxs-lookup"><span data-stu-id="a4680-105">Create a new class driving from `CardElement`</span></span>
-- <span data-ttu-id="a4680-106">구현 해당 `getJsonTypeName`, `parse`하십시오 `toJSON`를 `internalRender` 및 `renderSpeech` 메서드</span><span class="sxs-lookup"><span data-stu-id="a4680-106">Implement its `getJsonTypeName`, `parse`, `toJSON`, `internalRender` and `renderSpeech` methods</span></span>
-- <span data-ttu-id="a4680-107">렌더러의 요소 레지스트리에 추가 하 여 등록</span><span class="sxs-lookup"><span data-stu-id="a4680-107">Register it by adding it to the renderer's element registry</span></span>
+<span data-ttu-id="8b6c2-104">사용자 지정 적응 카드 요소 형식을 만드는 단계는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-104">The steps for creating a custom Adaptive Card element type are:</span></span>
+- <span data-ttu-id="8b6c2-105">에서 구동 되는 새 클래스를 만듭니다.`CardElement`</span><span class="sxs-lookup"><span data-stu-id="8b6c2-105">Create a new class driving from `CardElement`</span></span>
+- <span data-ttu-id="8b6c2-106">`getJsonTypeName` `parse`,, 및`renderSpeech`메서드 를 구현 합니다. `toJSON` `internalRender`</span><span class="sxs-lookup"><span data-stu-id="8b6c2-106">Implement its `getJsonTypeName`, `parse`, `toJSON`, `internalRender` and `renderSpeech` methods</span></span>
+- <span data-ttu-id="8b6c2-107">렌더러의 요소 레지스트리에 추가 하 여 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-107">Register it by adding it to the renderer's element registry</span></span>
 
-<span data-ttu-id="a4680-108">보겠습니다 예로 및 간단한 진행률 표시줄 요소를 구현 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-108">Let's take an example and implement a simple Progress Bar element:</span></span>
+<span data-ttu-id="8b6c2-108">예를 사용 하 여 간단한 진행률 표시줄 요소를 구현 해 보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-108">Let's take an example and implement a simple Progress Bar element:</span></span>
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -136,15 +136,15 @@ export class ProgressBar extends Adaptive.CardElement {
 }
 ```
 
-<span data-ttu-id="a4680-109">됐습니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-109">That's it.</span></span> <span data-ttu-id="a4680-110">이제 렌더러를 사용 하 여 등록 진행률 표시줄 클래스만 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-110">Now just register the Progress Bar class with the renderer:</span></span>
+<span data-ttu-id="8b6c2-109">이제 끝났습니다!</span><span class="sxs-lookup"><span data-stu-id="8b6c2-109">That's it.</span></span> <span data-ttu-id="8b6c2-110">이제 진행률 표시줄 클래스를 렌더러에서 등록 하기만 하면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-110">Now just register the Progress Bar class with the renderer:</span></span>
 
 ```typescript
 Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { return new ProgressBar(); });
 ```
 
-## <a name="implement-and-register-a-custom-action"></a><span data-ttu-id="a4680-111">구현 하 고 사용자 지정 작업을 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-111">Implement and register a custom action</span></span>
+## <a name="implement-and-register-a-custom-action"></a><span data-ttu-id="8b6c2-111">사용자 지정 작업 구현 및 등록</span><span class="sxs-lookup"><span data-stu-id="8b6c2-111">Implement and register a custom action</span></span>
 
-<span data-ttu-id="a4680-112">Adaptive Card 동작을 사용자 지정을 만드는 단계는 기본적으로 사용자 지정 요소에 대 한 것과 동일 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-112">The steps for creating a custom Adaptive Card action are essentially the same as those for custom elements.</span></span> <span data-ttu-id="a4680-113">간단히 구성할 수 있는 텍스트를 사용 하 여 메시지 상자를 표시 하는 경고 작업의 간단한 예는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-113">Here is a simple example of an Alert Action that simply displays a message box with configurable text:</span></span>
+<span data-ttu-id="8b6c2-112">사용자 지정 적응 카드 작업을 만드는 단계는 기본적으로 사용자 지정 요소와 동일 합니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-112">The steps for creating a custom Adaptive Card action are essentially the same as those for custom elements.</span></span> <span data-ttu-id="8b6c2-113">다음은 구성 가능한 텍스트가 있는 메시지 상자를 단순히 표시 하는 경고 동작의 간단한 예입니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-113">Here is a simple example of an Alert Action that simply displays a message box with configurable text:</span></span>
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -176,15 +176,15 @@ export class AlertAction extends Adaptive.Action {
 }
 ```
 
-<span data-ttu-id="a4680-114">이제 새 동작을 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-114">Now register the new action:</span></span>
+<span data-ttu-id="8b6c2-114">이제 새 작업을 등록 합니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-114">Now register the new action:</span></span>
 
 ```
 Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { return new AlertAction(); });
 ```
 
-## <a name="example"></a><span data-ttu-id="a4680-115">예제</span><span class="sxs-lookup"><span data-stu-id="a4680-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8b6c2-115">예제</span><span class="sxs-lookup"><span data-stu-id="8b6c2-115">Example</span></span>
 
-<span data-ttu-id="a4680-116">ProgressBar 요소와 AlertAction 작업을 사용 하는 샘플 카드는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="a4680-116">Here is a sample card that uses both the ProgressBar element and AlertAction action:</span></span>
+<span data-ttu-id="8b6c2-116">ProgressBar 요소와 AlertAction 동작을 모두 사용 하는 샘플 카드는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="8b6c2-116">Here is a sample card that uses both the ProgressBar element and AlertAction action:</span></span>
 ```
 {
     "type": "AdaptiveCard",
@@ -212,4 +212,4 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 }
 ```
 
-<span data-ttu-id="a4680-117">렌더링 하는 방법을 다음과 같습니다: ![이미지](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span><span class="sxs-lookup"><span data-stu-id="a4680-117">And here is how it renders: ![image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span></span>
+<span data-ttu-id="8b6c2-117">그리고 다음은 렌더링 되는 방법 ![입니다. 이미지](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span><span class="sxs-lookup"><span data-stu-id="8b6c2-117">And here is how it renders: ![image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span></span>

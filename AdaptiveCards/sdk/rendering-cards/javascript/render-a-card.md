@@ -1,5 +1,5 @@
 ---
-title: JavaScript SDK-카드를 렌더링 합니다.
+title: 카드 렌더링-JavaScript SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553125"
 ---
-# <a name="render-a-card---javascript"></a><span data-ttu-id="6d42e-102">렌더링 카드-JavaScript</span><span class="sxs-lookup"><span data-stu-id="6d42e-102">Render a card - JavaScript</span></span>
+# <a name="render-a-card---javascript"></a><span data-ttu-id="79b2f-102">카드 렌더링-JavaScript</span><span class="sxs-lookup"><span data-stu-id="79b2f-102">Render a card - JavaScript</span></span>
 
-<span data-ttu-id="6d42e-103">JavaScript SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="6d42e-103">Here's how to render a card using the JavaScript SDK.</span></span>
+<span data-ttu-id="79b2f-103">JavaScript SDK를 사용 하 여 카드를 렌더링 하는 방법은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="79b2f-103">Here's how to render a card using the JavaScript SDK.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="6d42e-104">사용법</span><span class="sxs-lookup"><span data-stu-id="6d42e-104">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="79b2f-104">사용법</span><span class="sxs-lookup"><span data-stu-id="79b2f-104">Usage</span></span>
 
-### <a name="import-the-module"></a><span data-ttu-id="6d42e-105">모듈 가져오기</span><span class="sxs-lookup"><span data-stu-id="6d42e-105">Import the module</span></span>
+### <a name="import-the-module"></a><span data-ttu-id="79b2f-105">모듈 가져오기</span><span class="sxs-lookup"><span data-stu-id="79b2f-105">Import the module</span></span>
 
 ```js
 // import the module
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="6d42e-106">카드를 렌더링 합니다.</span><span class="sxs-lookup"><span data-stu-id="6d42e-106">Render a card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="79b2f-106">카드 렌더링</span><span class="sxs-lookup"><span data-stu-id="79b2f-106">Render a card</span></span>
 
 ```js
 // Author a card
