@@ -1,5 +1,5 @@
 ---
-title: JavaScript SDK-카드를 렌더링 합니다.
+title: 카드 렌더링-JavaScript SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,9 +11,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553125"
 ---
-# <a name="render-a-card---javascript"></a>렌더링 카드-JavaScript
+# <a name="render-a-card---javascript"></a>카드 렌더링-JavaScript
 
-JavaScript SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.
+JavaScript SDK를 사용 하 여 카드를 렌더링 하는 방법은 다음과 같습니다.
 
 ## <a name="usage"></a>사용법
 
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a>카드를 렌더링 합니다.
+## <a name="render-a-card"></a>카드 렌더링
 
 ```js
 // Author a card

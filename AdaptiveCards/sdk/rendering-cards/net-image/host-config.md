@@ -13,4 +13,4 @@ ms.locfileid: "59553445"
 ---
 # <a name="host-config---net-image"></a>호스트 구성-.NET 이미지
 
-참조 된 [WPF docs](../net-wpf/getting-started.md) 이러한 옵션의 전체 run-down에 대 한 합니다.
+이러한 옵션의 전체 실행은 [WPF 문서](../net-wpf/getting-started.md) 를 참조 하세요.

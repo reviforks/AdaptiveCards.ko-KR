@@ -13,9 +13,9 @@ ms.locfileid: "59553675"
 ---
 # <a name="host-config---uwp"></a>호스트 구성-UWP
 
-렌더러에 맞게 HostConfig 개체의 인스턴스를 제공 합니다. (참조 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 전체 설명 합니다.)
+렌더러를 사용자 지정 하려면 HostConfig 개체의 인스턴스를 제공 합니다. 전체 설명은 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 를 참조 하세요.
 
-> HostConfig 개체를 변경 하려는 속성만 설정할 수 있는 기본값을 사용 하 여 인스턴스화할 수 있습니다.
+> HostConfig 개체는 기본값으로 인스턴스화되기 때문에 변경 하려는 속성만 설정할 수 있습니다.
 
 예:
 
@@ -33,7 +33,7 @@ var hostConfig = new AdaptiveHostConfig()
 renderer.HostConfig = hostConfig;
 ```
 
-> 또는 JSON 문자열에서는 HostConfig를 로드할 수 있습니다.
+> 또는 JSON 문자열에서 HostConfig를 로드할 수 있습니다.
 
 예:
 
@@ -43,4 +43,4 @@ var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString);
 renderer.HostConfig = hostConfig;
 ```
 
-UWPRenderer에 전달할 때 HostConfig 모든 카드를 렌더링 하는 데 기본을 설정 됩니다.
+UWPRenderer에 전달할 때 렌더링 하는 모든 카드에 사용할 기본 HostConfig를 설정 하 게 됩니다.

@@ -1,5 +1,5 @@
 ---
-title: SDK를 렌더링 하는.NET 이미지
+title: .NET 이미지 렌더링 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552865"
 ---
-# <a name="getting-started---net-image"></a>가져오기 시작-.NET 이미지
+# <a name="getting-started---net-image"></a>시작 하기-.NET 이미지
 
-설명 했 듯이 [Getting Started](../../../authoring-cards/getting-started.md) 페이지 Adaptive Card는 JSON 직렬화 된 카드 개체 모델입니다. 이 라이브러리를 통해 손쉽게 해당 JSON PNG 이미지로 렌더링 합니다.
+[시작](../../../authoring-cards/getting-started.md) 페이지에서 설명한 대로 적응 카드는 JSON 직렬화 카드 개체 모델입니다. 이 라이브러리를 사용 하면 해당 JSON을 PNG 이미지로 쉽게 렌더링할 수 있습니다.
 
-이 패키지도 사용할 수는 서버에서 이미지를 생성 하 고 사용자에 대 한 모든 "매직 STA 스레드" 이로써를 구현 합니다. 
+서버에서이 패키지를 사용 하 여 이미지를 생성 하 고 모든 "매직 STA 스레드" goo를 구현할 수도 있습니다. 
 
 ## <a name="nuget-install"></a>NuGet 설치
 
@@ -27,4 +27,4 @@ Install-Package AdaptiveCards.Rendering.Wpf -IncludePrerelease
 
 ## <a name="next-steps"></a>다음 단계
 
-참조 [카드를 렌더링할](render-a-card.md) 다음 단계!
+[카드 렌더링](render-a-card.md)에서 다음 단계를 확인합니다.

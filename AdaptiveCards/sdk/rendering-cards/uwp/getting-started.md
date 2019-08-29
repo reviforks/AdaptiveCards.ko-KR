@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552905"
 ---
-# <a name="getting-started---uwp"></a>가져오기 시작-UWP
+# <a name="getting-started---uwp"></a>시작 하기-UWP
 
-대상 UWP 네이티브 컨트롤 렌더러를입니다.
+이 렌더러는 UWP 네이티브 컨트롤을 대상으로 합니다.
 
 ## <a name="install-nuget-package"></a>NuGet 패키지 설치
 
-**AdaptiveCards.Rendering.Uwp**
+**AdaptiveCards**
 
 [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp)
 
@@ -35,4 +35,4 @@ using AdaptiveCards.Rendering.Uwp;
 
 ## <a name="next-steps"></a>다음 단계
 
-참조 [카드를 렌더링할](render-a-card.md) 다음 단계!
+[카드 렌더링](render-a-card.md)에서 다음 단계를 확인합니다.

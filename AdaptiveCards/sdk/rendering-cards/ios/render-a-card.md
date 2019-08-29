@@ -41,7 +41,7 @@ if(cardParseResult.isValid){
     renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
 }
 ``` 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```objective-c
 --------------------------------------------------------------------------------

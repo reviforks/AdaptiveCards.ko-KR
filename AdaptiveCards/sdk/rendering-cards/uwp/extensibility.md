@@ -13,9 +13,9 @@ ms.locfileid: "59553045"
 ---
 # <a name="extensibility---uwp"></a>확장성-UWP
 
-## <a name="changing-per-element-rendering"></a>요소 렌더링 당 변경
+## <a name="changing-per-element-rendering"></a>요소 렌더링 별 변경
 
-렌더러 클래스를 구현 및 렌더러에 설정
+렌더러 클래스를 구현 하 고 렌더러에 설정 합니다.
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

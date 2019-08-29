@@ -13,14 +13,14 @@ ms.locfileid: "59552635"
 ---
 # <a name="extensibility---javascript"></a>확장성-JavaScript
 
-## <a name="implement-and-register-a-custom-element"></a>구현 하 고 사용자 지정 요소를 등록 합니다.
+## <a name="implement-and-register-a-custom-element"></a>사용자 지정 요소 구현 및 등록
 
-사용자 지정 Adaptive Card 요소 형식을 만드는 단계는 다음과 같습니다.
-- 구동 하는 새 클래스 만들기 `CardElement`
-- 구현 해당 `getJsonTypeName`, `parse`하십시오 `toJSON`를 `internalRender` 및 `renderSpeech` 메서드
-- 렌더러의 요소 레지스트리에 추가 하 여 등록
+사용자 지정 적응 카드 요소 형식을 만드는 단계는 다음과 같습니다.
+- 에서 구동 되는 새 클래스를 만듭니다.`CardElement`
+- `getJsonTypeName` `parse`,, 및`renderSpeech`메서드 를 구현 합니다. `toJSON` `internalRender`
+- 렌더러의 요소 레지스트리에 추가 하 여 등록 합니다.
 
-보겠습니다 예로 및 간단한 진행률 표시줄 요소를 구현 합니다.
+예를 사용 하 여 간단한 진행률 표시줄 요소를 구현 해 보겠습니다.
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -136,15 +136,15 @@ export class ProgressBar extends Adaptive.CardElement {
 }
 ```
 
-됐습니다. 이제 렌더러를 사용 하 여 등록 진행률 표시줄 클래스만 합니다.
+이제 끝났습니다! 이제 진행률 표시줄 클래스를 렌더러에서 등록 하기만 하면 됩니다.
 
 ```typescript
 Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { return new ProgressBar(); });
 ```
 
-## <a name="implement-and-register-a-custom-action"></a>구현 하 고 사용자 지정 작업을 등록 합니다.
+## <a name="implement-and-register-a-custom-action"></a>사용자 지정 작업 구현 및 등록
 
-Adaptive Card 동작을 사용자 지정을 만드는 단계는 기본적으로 사용자 지정 요소에 대 한 것과 동일 합니다. 간단히 구성할 수 있는 텍스트를 사용 하 여 메시지 상자를 표시 하는 경고 작업의 간단한 예는 다음과 같습니다.
+사용자 지정 적응 카드 작업을 만드는 단계는 기본적으로 사용자 지정 요소와 동일 합니다. 다음은 구성 가능한 텍스트가 있는 메시지 상자를 단순히 표시 하는 경고 동작의 간단한 예입니다.
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -176,7 +176,7 @@ export class AlertAction extends Adaptive.Action {
 }
 ```
 
-이제 새 동작을 등록 합니다.
+이제 새 작업을 등록 합니다.
 
 ```
 Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { return new AlertAction(); });
@@ -184,7 +184,7 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 
 ## <a name="example"></a>예제
 
-ProgressBar 요소와 AlertAction 작업을 사용 하는 샘플 카드는 다음과 같습니다.
+ProgressBar 요소와 AlertAction 동작을 모두 사용 하는 샘플 카드는 다음과 같습니다.
 ```
 {
     "type": "AdaptiveCard",
@@ -212,4 +212,4 @@ ProgressBar 요소와 AlertAction 작업을 사용 하는 샘플 카드는 다�
 }
 ```
 
-렌더링 하는 방법을 다음과 같습니다: ![이미지](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)
+그리고 다음은 렌더링 되는 방법 ![입니다. 이미지](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)

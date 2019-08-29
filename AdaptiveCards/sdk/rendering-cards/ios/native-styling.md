@@ -1,5 +1,5 @@
 ---
-title: 기본 스타일-iOS SDK
+title: 기본 스타일 지정-iOS SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,6 +11,6 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553305"
 ---
-# <a name="native-styling---ios"></a>기본 스타일-iOS
+# <a name="native-styling---ios"></a>기본 스타일 지정-iOS
 
 지원되지 않습니다.

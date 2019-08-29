@@ -11,9 +11,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552605"
 ---
-# <a name="getting-started---net-html"></a>가져오기 시작-.NET HTML
+# <a name="getting-started---net-html"></a>시작 하기-.NET HTML
 
-설명 했 듯이 [Getting Started](../../../authoring-cards/getting-started.md) 페이지 Adaptive Card는 JSON 직렬화 된 카드 개체 모델입니다. 이 서버에서 일반적으로 HTML 태그 생성에 대 한.NET 라이브러리입니다.
+[시작](../../../authoring-cards/getting-started.md) 페이지에서 설명한 대로 적응 카드는 JSON 직렬화 카드 개체 모델입니다. 일반적으로 서버에서 HTML 태그를 생성 하는 .NET 라이브러리입니다.
 
 ## <a name="nuget-install"></a>NuGet 설치
 
@@ -25,4 +25,4 @@ Install-Package AdaptiveCards.Rendering.Html -IncludePrerelease
 
 ## <a name="next-steps"></a>다음 단계
 
-참조 [카드를 렌더링할](render-a-card.md) 다음 단계!
+[카드 렌더링](render-a-card.md)에서 다음 단계를 확인합니다.

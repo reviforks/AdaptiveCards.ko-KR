@@ -1,5 +1,5 @@
 ---
-title: Actions - iOS SDK
+title: 작업-iOS SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -13,7 +13,7 @@ ms.locfileid: "59553585"
 ---
 # <a name="actions---ios"></a>작업-iOS
 
-개발자는 이러한 SubmitAction 및 OpenUrl ACRActionDelegate를 구현 하 여 작업을 수신 하 고 AdaptiveCard의 인스턴스로 설정 수 있습니다.
+개발자는 ACRActionDelegate를 구현 하 여 SubmitAction 및 OpenUrl 등의 작업을 수신 하 고 AdaptiveCard 인스턴스로 설정할 수 있습니다.
 
 ```objective-c
 //// delegate implementation

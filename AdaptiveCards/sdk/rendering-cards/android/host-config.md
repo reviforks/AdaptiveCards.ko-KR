@@ -13,7 +13,7 @@ ms.locfileid: "59553345"
 ---
 # <a name="host-config---android"></a>호스트 구성-Android
 
-렌더러에 맞게 HostConfig 개체의 인스턴스를 제공 합니다. (참조 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 전체 설명 합니다.)
+렌더러를 사용자 지정 하려면 HostConfig 개체의 인스턴스를 제공 합니다. 전체 설명은 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 를 참조 하세요.
 
 문자열에서 HostConfig 개체를 만들려면 DeserializeFromString 메서드를 사용 합니다.
 

@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552645"
 ---
-# <a name="getting-started---ios"></a>가져오기 시작-iOS
+# <a name="getting-started---ios"></a>시작 하기-iOS
 
-IOS 네이티브 컨트롤을 대상으로 하는이 렌더러.
+IOS 네이티브 컨트롤을 대상으로 하는 렌더러입니다.
 
-## <a name="install-pod"></a>Pod를 설치 합니다.
+## <a name="install-pod"></a>Pod 설치
 
-이 제품은 pod입니다.
+Pod로 사용할 수 있습니다.
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards)
 
@@ -33,4 +33,4 @@ IOS 네이티브 컨트롤을 대상으로 하는이 렌더러.
 
 ## <a name="next-steps"></a>다음 단계
 
-참조 [카드를 렌더링할](render-a-card.md) 다음 단계!
+[카드 렌더링](render-a-card.md)에서 다음 단계를 확인합니다.

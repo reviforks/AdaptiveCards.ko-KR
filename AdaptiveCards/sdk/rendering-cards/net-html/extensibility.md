@@ -15,9 +15,9 @@ ms.locfileid: "59552535"
 
 ## <a name="custom-element-rendering"></a>사용자 지정 요소 렌더링
 
-렌더러의 전체 컨트롤에 대해 사용할 수 있습니다 합니다 `ElementRenderers` 속성을 **추가**를 **제거**, 또는 **재정의** 렌더러 기본입니다.
+렌더러를 완벽하게 제어하려면 `ElementRenderers` 속성을 사용하여 기본 렌더러를 **추가**, **제거** 또는 **재정의**하면 됩니다.
 
-다음 예제에서는 사용자 지정을 정의 하는 방법을 보여 줍니다. `"type": "Rating"` 요소 및 렌더링 합니다.
+다음 예제에서는 사용자 지정 `"type": "Rating"` 요소를 정의하고 렌더링하는 방법을 보여줍니다.
 
 ```csharp
 // Register the new type with the JSON parser

@@ -1,5 +1,5 @@
 ---
-title: UWP SDK-카드를 렌더링 합니다.
+title: 카드 렌더링-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552435"
 ---
-# <a name="render-a-card---uwp"></a>UWP-카드를 렌더링 합니다.
+# <a name="render-a-card---uwp"></a>카드 렌더링-UWP
 
-UWP SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.
+UWP SDK를 사용 하 여 카드를 렌더링 하는 방법은 다음과 같습니다.
 
-## <a name="create-an-instance-of-your-renderer"></a>프로그램 렌더러의 인스턴스를 만듭니다
+## <a name="create-an-instance-of-your-renderer"></a>렌더러의 인스턴스 만들기
 
 렌더러 라이브러리의 인스턴스를 만듭니다. 
 
@@ -38,9 +38,9 @@ var card = AdaptiveCard.FromJsonString(jsonString);
 var card = AdaptiveCard.FromJson(jsonObject);
 ```
 
-## <a name="render-a-card"></a>카드를 렌더링 합니다.
+## <a name="render-a-card"></a>카드 렌더링
 
-원본에서 카드를 획득 하 고 렌더링 합니다.
+원본에서 카드를 획득 하 여 렌더링 합니다.
 
 ```csharp
 RenderedAdaptiveCard renderedAdaptiveCard =  renderer.RenderAdaptiveCard(card);

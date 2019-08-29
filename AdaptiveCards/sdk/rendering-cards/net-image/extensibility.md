@@ -1,5 +1,5 @@
 ---
-title: 확장성-SDK를 렌더링 하는.NET 이미지
+title: 확장성-.NET 이미지 렌더링 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -13,4 +13,4 @@ ms.locfileid: "59552875"
 ---
 # <a name="extensibility---net-image"></a>확장성-.NET 이미지
 
-참조 된 [WPF docs](../net-wpf/getting-started.md) 이러한 옵션의 전체 run-down에 대 한 합니다.
+이러한 옵션의 전체 실행은 [WPF 문서](../net-wpf/getting-started.md) 를 참조 하세요.

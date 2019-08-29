@@ -1,5 +1,5 @@
 ---
-title: .NET 이미지 렌더링 SDK-카드를 렌더링 합니다.
+title: 카드 렌더링-.NET 이미지 렌더링 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,9 +11,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552495"
 ---
-# <a name="render-a-card---net-image"></a>카드-.NET 이미지 렌더링
+# <a name="render-a-card---net-image"></a>카드 렌더링-.NET 이미지
 
-.NET 이미지 SDK를 사용 하 여 카드를 렌더링 하는 방법을 다음과 같습니다.
+.NET 이미지 SDK를 사용 하 여 카드를 렌더링 하는 방법은 다음과 같습니다.
 
 ```csharp
 try
