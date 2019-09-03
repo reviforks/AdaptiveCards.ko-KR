@@ -1,66 +1,66 @@
 ---
-title: 응용 프로그램 내에서 카드를 렌더링합니다.
+title: 애플리케이션 내에서 카드 렌더링
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67138096"
 ---
-# <a name="rendering-cards-inside-your-application"></a>응용 프로그램 내에서 카드를 렌더링합니다.
+# <a name="rendering-cards-inside-your-application"></a>애플리케이션 내에서 카드 렌더링
 
-응용 프로그램 내에서 Adaptive Card를 렌더링 하는 것이 쉽습니다. 에서는 모든 일반적인 플랫폼용 Sdk를 제공 합니다. 뿐만 아니라 제공을 [사양 자세한](implement-a-renderer.md) 고유한 Adaptive Card 렌더러를 만들기 위한 합니다.
+애플리케이션 내에서 적응형 카드를 쉽게 렌더링할 수 있습니다. 모든 일반적인 플랫폼용 SDK를 제공하며 고유한 적응형 카드 렌더러를 만드는 데 필요한 [자세한 사양](implement-a-renderer.md)을 제공합니다.
 
-1. **렌더러를 SDK 설치** -대상 플랫폼에 대 한 합니다.
-2. **렌더러 인스턴스를 만들고** -앱의 스타일, 규칙 및 작업 이벤트 처리기를 사용 하 여 구성 합니다.
-3. **카드와 네이티브 UI 렌더링** -앱에 스타일이 자동으로 적용 합니다.
+1. **렌더러 SDK 설치** - 대상 플랫폼에 해당합니다.
+2. **렌더러 인스턴스 만들기** - 앱 스타일, 규칙 및 작업 이벤트 처리기를 사용하여 구성됩니다.
+3. **카드를 네이티브 UI로 렌더링** - 자동으로 앱에 맞게 스타일이 지정됩니다.
 
-## <a name="adaptive-cards-sdks"></a>Adaptive Card Sdk
+## <a name="adaptive-cards-sdks"></a>적응형 카드 SDK
 
-|플랫폼|Install|빌드|Docs|상태|
+|플랫폼|설치|빌드|문서|상태|
 |---|---|---|---|---|
-| JavaScript | [![npm 설치](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [Docs](../sdk/rendering-cards/javascript/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
-| .NET WPF | [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [Docs](../sdk/rendering-cards/net-wpf/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
-| .NET HTML | [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet) | [Docs](../sdk/rendering-cards/net-html/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
-| Windows UWP | [![Nuget 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/uwp) | [Docs](../sdk/rendering-cards/uwp/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20583.svg) |
-| Android | [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/android) | [Docs](../sdk/rendering-cards/android/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/17651.svg)
-| iOS | [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/ios) | [Docs](../sdk/rendering-cards/ios/getting-started.md) |  ![빌드 상태](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/16990.svg) |
+| JavaScript | [![npm 설치](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [문서](../sdk/rendering-cards/javascript/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
+| .NET WPF | [![NuGet 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [문서](../sdk/rendering-cards/net-wpf/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
+| .NET HTML | [![NuGet 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet) | [문서](../sdk/rendering-cards/net-html/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |
+| Windows UWP | [![NuGet 설치](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Uwp.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Uwp) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/uwp) | [문서](../sdk/rendering-cards/uwp/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20583.svg) |
+| Android | [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/android) | [문서](../sdk/rendering-cards/android/getting-started.md) | ![빌드 상태](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/17651.svg)
+| iOS | [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards) | [원본](https://github.com/Microsoft/AdaptiveCards/tree/master/source/ios) | [문서](../sdk/rendering-cards/ios/getting-started.md) |  ![빌드 상태](https://img.shields.io/vso/build/Microsoft/8d47e068-03c8-4cdc-aa9b-fc6929290322/16990.svg) |
 
-## <a name="create-an-instance-of-the-renderer"></a>렌더러의 인스턴스를 만듭니다
+## <a name="create-an-instance-of-the-renderer"></a>렌더러 인스턴스 만들기
 
-인스턴스를 만들려면 다음 단계는는 `AdaptiveCardRenderer`합니다. 
+다음 단계는 `AdaptiveCardRenderer` 인스턴스를 만드는 것입니다. 
 
-### <a name="hook-up-action-events"></a>작업 이벤트 후크
+### <a name="hook-up-action-events"></a>작업 이벤트 연결
 
-기본적으로 카드에서 단추도 렌더링 됩니다. 작업 되지만 예상 대로 작동 되도록 할 앱에 달려 있습니다. 각 SDK에 해당 하는 `OnAction` 처리 해야 하는 이벤트입니다.
+기본적으로 작업은 카드에 단추로 렌더링되지만 앱에서 사용자가 원하는 대로 작동하도록 설정할 수 있습니다. 각 SDK에는 처리해야 하는 `OnAction` 이벤트에 해당하는 항목이 있습니다.
 
-* **Action.OpenUrl** -지정 된 열 `url`합니다.  
-* **Action.Submit** -제출 결과 및 원본에 전송 합니다. 전적으로 사용자가 어떻게 보내기 카드의 원본입니다.
-* **Action.ShowCard** -대화 상자를 호출 하 고 해당 대화 상자에 하위 카드를 렌더링 합니다. 참고만 할 경우이 처리할 `ShowCardActionMode` 로 설정 된 `popup`합니다.
+* **Action.OpenUrl** - 지정된 `url`을 엽니다.  
+* **Action.Submit** - 제출 결과를 가져오고 원본으로 보냅니다. 카드 원본으로 보내는 방법은 사용자가 결정할 수 있습니다.
+* **Action.ShowCard** - 대화 상자를 호출하고 해당 대화 상자에 하위 카드를 렌더링합니다. `ShowCardActionMode`가 `popup`으로 설정되는 경우에만 이 항목을 처리해야 합니다.
 
-## <a name="render-a-card"></a>카드를 렌더링 합니다.
+## <a name="render-a-card"></a>카드 렌더링
 
-카드 페이로드를 획득 한 후 렌더러를 호출 하 고 카드의 전달 하기만 하면 됩니다. 카드 내용을 이루어져 네이티브 UI를 얻게 됩니다. 이제 방금 어딘가에이 UI 앱에서.
+카드 페이로드를 얻은 후 렌더러를 호출하고 카드에 전달하세요. 그러면 카드 콘텐츠로 구성된 네이티브 UI 개체를 다시 얻게 됩니다. 이제 이 UI를 앱 내에 배치합니다.
 
 ## <a name="customization"></a>사용자 지정
 
-여러 가지 방법으로 렌더링할 대상을 사용자 지정할 수 있습니다. 
+렌더링되는 항목을 사용자 지정할 수 있는 여러 가지 방법이 있습니다. 
 
 ### <a name="hostconfig"></a>HostConfig
 
-A [HostConfig](host-config.md) 은 기본 스타일 지정 및 앱 내에서 카드의 동작을 제어 하는 공유 되는 플랫폼 간 구성 개체입니다. 글꼴 크기, 요소, 색, 수 등 지원 되는 작업 간의 간격 등을 정의 합니다. 
+[HostConfig](host-config.md)는 앱 내에서 카드의 기본 스타일과 동작을 제어하는 플랫폼 간 공유 구성 개체입니다. 글꼴 크기, 요소 간의 간격, 색, 지원되는 작업 수 등의 항목을 정의합니다. 
 
 ### <a name="native-platform-styling"></a>네이티브 플랫폼 스타일 지정
 
-대부분의 UI 프레임 워크를 사용 하면 네이티브 UI 프레임 워크 스타일을 사용 하 여 렌더링 된 카드 스타일을 수 있습니다. 예를 들어 HTML에서 html, CSS 클래스를 지정할 수 있습니다 또는 XAML에서 전달할 수 있습니다 ResourceDictionary를 사용자 지정에서 출력의 세분화 된 컨트롤에 대 한 합니다.
+대부분의 UI 프레임워크에서는 네이티브 UI 프레임워크 스타일을 사용하여 렌더링된 카드의 스타일을 지정할 수 있습니다. 예를 들어 HTML에서는 HTML의 CSS 클래스를 지정할 수 있고, XAML에서는 출력을 세밀하게 제어하기 위한 사용자 지정 ResourceDictionary에 전달할 수 있습니다.
 
-### <a name="customize-per-element-rendering"></a>요소 마다 렌더링을 사용자 지정
+### <a name="customize-per-element-rendering"></a>요소별 렌더링 사용자 지정
 
-각 SDK를 사용 하면 모든 요소의 렌더링을 재정의 하거나 정의 하는 완전히 새로운 요소에 대 한 지원을 추가할 수 있습니다.  예를 들어, 변경할 수 있습니다는 `Input.Date` 렌더러 렌더러의 출력의 나머지 부분을 유지 하면서 사용자 고유의 사용자 지정 컨트롤을 내보낼 수 있습니다. 사용자 지정에 대 한 지원을 추가할 수 있습니다 또는 `Rating` 정의 하는 요소입니다.
+각 SDK를 사용하여 요소의 렌더링을 재정의하거나, 사용자가 정의하는 완전히 새로운 요소의 지원을 추가할 수도 있습니다.  예를 들어 렌더러의 나머지 출력을 계속 유지하면서 고유한 사용자 지정 컨트롤을 내보내도록 `Input.Date` 렌더러를 변경할 수 있습니다. 또는 사용자가 정의한 사용자 지정 `Rating` 요소의 지원을 추가할 수 있습니다.
 
 
 
