@@ -58,7 +58,7 @@ Visual Studio 및 Visual Studio Code에서 `$schema` 참조를 포함하여 자�
 
 ![marketplace](media/tools/vscode-extension-marketplace.png)
 
-### <a name="usage"></a>용도
+### <a name="usage"></a>사용
 
 적응형 카드 `$schema` 속성으로 .json 파일을 편집하는 경우 `Ctrl+Shift+V A`를 사용하여 볼 수 있습니다.
 ```json
