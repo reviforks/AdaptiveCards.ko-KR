@@ -4,16 +4,14 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 20b324c12cd7cec10f2142fc2cf76039b5c329de
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 65494ed437303d26a202c9a5b95f88255147cbd0
+ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59552855"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923079"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>Windows 개발자용 적응형 카드
-
-
 
 ## <a name="timeline"></a>타임라인
 
@@ -34,6 +32,12 @@ userActivity.DisplayText = article.Title; //used for details tile text
 userActivity.VisualElements.Content = AdaptiveCardBuilder.CreateAdaptiveCardFromJson(jsonString);
 await userActivity.SaveAsync();
 ```
+
+### <a name="learning-module"></a>학습 모듈
+
+이러한 단계를 모두 학습하는 데 유용한 45분 학습 모듈이 있습니다.
+
+[적응형 카드를 Windows 10 타임라인에 통합](https://docs.microsoft.com/en-us/learn/modules/integrate-app-into-windows-10-timeline/)
 
 ### <a name="learn-more"></a>자세한 내용
 

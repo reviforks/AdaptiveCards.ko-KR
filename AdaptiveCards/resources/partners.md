@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 92e49a8e47129d2c8b90e7c6ae2d32aa4ecfeddc
-ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
+ms.openlocfilehash: ea662d3c3906c9c83de306d82d2c9e0d4997e6ad
+ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523852"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923056"
 ---
 # <a name="partners"></a>파트너 
 
@@ -26,3 +26,4 @@ ms.locfileid: "68523852"
 [Windows 타임라인](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | 이 PC, 다른 Windows PC 및 iOS/Android 디바이스에서 시작한 과거의 활동을 다시 시작하는 새로운 방법입니다. | [시작](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
 [Outlook 실행 가능 메시지](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | 메일에 실행 가능 메시지 첨부 | [시작](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
 [Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software) | 작업 영역 채팅, 모임 및 메모를 결합하는 플랫폼 | [시작](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0
+[Cisco WebEx Teams](https://www.webex.com/team-collaboration.html) | Webex Teams는 프로젝트 속도를 높이고, 더 나은 관계를 구축하고, 비즈니스 과제를 해결하는 데 도움이 됩니다. | [시작](https://developer.webex.com/docs/api/guides/cards) | 1.1
