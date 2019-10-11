@@ -1,15 +1,15 @@
 ---
-title: 템플릿 Sdk
+title: 템플릿 생성용 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 5f60a458af99f1b88e8ee428a8f29f1849be9b62
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: 3a9bfcd1bf8f87959a747997e04f5c5ad2a79980
+ms.sourcegitcommit: 90afb3729931b0e4cae19b17ef9e49453c2d2bf6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878880"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163616"
 ---
 # <a name="adaptive-card-templating-sdks"></a>적응 카드 템플릿 Sdk
 
@@ -19,7 +19,7 @@ ms.locfileid: "68878880"
 
 > [!IMPORTANT] 
 > 
-> 이러한 기능은 **미리 보기 상태 이며 변경 될 수**있습니다. 사용자 의견은 환영 뿐만 아니라 필요한 기능을 제공 하기 위해 중요 합니다.
+> 이러한 기능은 **미리 보기 상태이며 변경될 수 있습니다**. 사용자 의견은 언제나 환영이며, **사용자**에게 필요한 기능을 제공하는 데 중요합니다.
 > 
 > 초기 미리 보기 중에는 JavaScript SDK만 사용할 수 있지만 .NET SDK는 곧 도착할 것입니다.
 
@@ -82,10 +82,42 @@ adaptiveCard.parse(card);
 var htmlElement = adaptiveCard.render();
 ```
 
-## <a name="net-coming-soon"></a>.NET (*출시*예정)
-
-아직 작동 하지 않음: 
+## <a name="net"></a>.NET 
 
 ```console
-nuget install AdaptiveCards.Templating
+dotnet add package AdaptiveCards.Templating --version 0.1.0-alpha1
+```
+
+> [!NOTE]
+>
+> 위의 버전을 최신 게시 된 버전으로 변경 하는 것이 좋습니다.
+
+라이브러리 가져오기 
+
+```cs
+using AdaptiveCards.Templating
+```
+
+템플릿 JSON 및 데이터 JSON을 전달 하 여 템플릿 엔진을 사용 합니다.
+
+```cs
+var templateJson = @"
+{
+    ""type"": ""AdaptiveCard"",
+    ""version"": ""1.0"",
+    ""body"": [
+        {
+            ""type"": ""TextBlock"",
+            ""text"": ""Hello {name}""
+        }
+    ]
+}";
+
+var dataJson = @"
+{
+    ""name"": ""Mickey Mouse""
+}";
+
+var transformer = new AdaptiveTransformer();
+var cardJson = transformer.Transform(templateJson, dataJson);
 ```

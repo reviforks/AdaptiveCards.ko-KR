@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 487acab86d80d563210abe07968520ea7669498a
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 27c7d5ac7da3ae182667cbf8efa90d29f110d1d3
+ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299544"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72042528"
 ---
 # <a name="adaptive-cards-overview"></a>적응형 카드 개요 
 
@@ -76,8 +76,8 @@ Markdown은 간단하고 다양한 표현에 초점을 맞추면서 문서 콘�
 실수를 감수하며 사는 것보다 나중에 추가하는 것이 더 쉽습니다. 만약 무언가를 추가해야 할지 말지를 논쟁한다면 그대로 놔두기로 결정했습니다.  지원하지 않아도 되는 레거시가 잇는 것보다 속성을 추가하는 것이 항상 더 쉽습니다.
 
 
-## <a name="build-2018-session"></a>빌드 2018 세션
+## <a name="build-2019-session"></a>2019 세션 빌드
 
-빌드 2018에서 이루어진 다음 세션에서는 봇, Cortana, Outlook 및 Windows에서의 적응형 카드를 소개합니다. 
+Microsoft Build 컨퍼런스의 다음 세션은 다양한 사용 사례에서 적응형 카드를 소개합니다. 
 
-<iframe src="https://medius.studios.ms/Embed/Video/BRK2401?SFYT=true" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wT1yFr_j6IM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

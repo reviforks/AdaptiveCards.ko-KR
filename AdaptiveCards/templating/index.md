@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: ca21c70abc4638db8f96f3564d9e006aea39f926
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: fdfe7b46614f046155ab84a5a487105d55afd7cb
+ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878950"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72042544"
 ---
 # <a name="adaptive-cards-templating-preview"></a>적응형 카드 템플릿(미리 보기)
 
@@ -180,7 +180,7 @@ ms.locfileid: "68878950"
 플랫폼 | 설치 | 설명서
 --- | --- | ---
 JavaScript | `npm install adaptivecards-templating` | [설명서](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | *서비스 예정* | *서비스 예정*
+.NET | `nuget install AdaptiveCards.Templating` | [설명서](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>JavaScript 예
 
