@@ -4,21 +4,21 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: ca92f0a2b6ef8a36c5394e4dd9853df59fef22b2
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 9e13ebad04c780db83d25129a9f5829a9d43ef69
+ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299550"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917116"
 ---
 # <a name="extensibility---android"></a>확장성 - Android
 
 Android 렌더러를 확장 하 여 다음과 같은 여러 가지 시나리오를 지원할 수 있습니다.
 * [카드 요소의 사용자 지정 구문 분석](#custom-parsing-of-card-elements)
 * [카드 요소의 사용자 지정 렌더링](#custom-rendering-of-card-elements)
-* [작업의 사용자 지정 렌더링](#custom-rendering-of-actions) (V 1.2 이후)
-* [사용자 지정 이미지 로드](#custom-image-loading) (V 1.0.1 이후)
-* [사용자 지정 미디어 로드](#custom-media-loading) (V 1.1 이후)
+* [액션의 사용자 지정 렌더링](#custom-rendering-of-actions) (v 1.2 이후)
+* [사용자 지정 이미지 로드](#custom-image-loading) (v 1.0.1 이후)
+* [사용자 지정 미디어 로드](#custom-media-loading) (v 1.1 이후)
 
 ## <a name="custom-parsing-of-card-elements"></a>카드 요소의 사용자 지정 구문 분석
 
@@ -91,7 +91,7 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 >
 > [v1.2의 주요 변경 내용](#breaking-changes-for-v12)
 
-형식에 대 한 고유한 사용자 지정 렌더러를 정의 하려면 먼저에서 ```BaseCardElementRenderer```확장 되는 클래스를 만들어야 합니다.
+형식에 대 한 사용자 지정 렌더러를 정의 하려면 먼저 ```BaseCardElementRenderer```에서 확장 되는 클래스를 만들어야 합니다.
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -122,7 +122,7 @@ RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(co
 
 ### <a name="breaking-changes-for-v12"></a>V 1.2의 주요 변경 내용
 
-메서드가 매개 변수를 포함 하도록 변경 되었으며 이제 ContainerStyle이 포함 된 renderargs에 대해 변경 되었으므로BaseCardElementRenderer을확장하는클래스가다음과같이표시됩니다.```ContainerStyle``` ```RenderedAdaptiveCard``` ```render```
+```render``` 메서드가 ```RenderedAdaptiveCard``` 매개 변수를 포함 하도록 변경 되었으며 이제 ContainerStyle이 포함 된 RenderArgs에 대해 ```ContainerStyle``` 변경 되어 BaseCardElementRenderer을 확장 하는 클래스가 다음과 같이 표시 됩니다.
 
 ```
 public class MyCardElementRenderer extends BaseCardElementRenderer
@@ -144,7 +144,7 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 }
 ```
 
-다음 줄에서는에서 ```BaseActionElement```확장 되는 actionelement로 구문 분석 하는 방법을 보여 줍니다.
+그런 다음, 다음 줄은 ```BaseActionElement```에서 확장 되는 ActionElement로 구문 분석 하는 방법을 보여 줍니다.
 ```java
 public class MyActionElement extends BaseActionElement
 {
@@ -216,7 +216,7 @@ ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveC
 
 ## <a name="custom-rendering-of-actions"></a>작업의 사용자 지정 렌더링
 
-형식에 대 한 고유한 사용자 지정 작업 렌더러를 정의 하려면 먼저에서 ```BaseActionElementRenderer```확장 되는 클래스를 만들어야 합니다.
+형식에 대 한 고유한 사용자 지정 작업 렌더러를 정의 하려면 먼저 ```BaseActionElementRenderer```에서 확장 되는 클래스를 만들어야 합니다.
 ```java
 public class MyActionRenderer extends BaseActionElementRenderer
 {
@@ -255,7 +255,7 @@ RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(co
 
 ## <a name="custom-rendering-of-actions"></a>작업의 사용자 지정 렌더링
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > v1.2에서 작업의 사용자 지정 렌더링을 변경할 계획이며, 아직은 변경되지 않았습니다.
 
 ## <a name="custom-image-loading"></a>사용자 지정 이미지 로드
@@ -380,13 +380,13 @@ IResourceResolver의 메서드를 IOnlineImageLoader와 최대한 비슷하게 �
 
 보시는 것처럼, 가장 큰 변화는 다음과 같습니다.
 
-* ```loadOnlineImage(String, GenericImageLoaderAsync)```이름이로 바뀜```resolveImageResource(String, GenericImageLoaderAsync)```
-* 최대 너비가 필요한 ```resolveImageResource(String, GenericImageLoaderAsync)``` 시나리오를 지원 ```resolveImageResource(String, GenericImageLoaderAsync, int)``` 하기 위해에 대 한 오버 로드가 추가 되었습니다.
+* ```loadOnlineImage(String, GenericImageLoaderAsync)``` 이름이 ```resolveImageResource(String, GenericImageLoaderAsync)```
+* 최대 너비가 필요한 시나리오를 지원 하기 위해 ```resolveImageResource(String, GenericImageLoaderAsync)```에 대 한 오버 로드가 ```resolveImageResource(String, GenericImageLoaderAsync, int)```으로 추가 되었습니다.
 
 ## <a name="custom-media-loading"></a>사용자 지정 미디어 로드
 
 > [!IMPORTANT]
-> **API ```IOnlineMediaLoader``` 레벨 ```MediaDataSource``` 23 또는 Android M에서 추가 된 요구 사항 명심**
+> **API 레벨 23 또는 Android M에서 추가 된 ```MediaDataSource``` 필요한 ```IOnlineMediaLoader```를 잊지 마세요.**
 
 미디어 요소가 포함되면서, 개발자가 기본 mediaPlayer 요소에 사용되는 [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource)를 재정의할 수 있도록 IOnlineMediaLoader 인터페이스도 포함되었습니다. **(Android M 필요)**
 
