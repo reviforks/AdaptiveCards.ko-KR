@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 993618ed94eaea1a004c7893a5a3927c0d818cd6
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: b99a2905fb000653b7ee75204221b832a2b5a907
+ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878900"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917130"
 ---
 # <a name="adaptive-cards-template-language"></a>적응 카드 템플릿 언어
 
@@ -19,19 +19,19 @@ ms.locfileid: "68878900"
 
 > [!IMPORTANT] 
 > 
-> 이러한 기능은 **미리 보기 상태 이며 변경 될 수**있습니다. 사용자 의견은 환영 뿐만 아니라 필요한 기능을 제공 하기 위해 중요 합니다.
+> 이러한 기능은 **미리 보기 상태이며 변경될 수 있습니다**. 사용자 의견은 언제나 환영이며, **사용자**에게 필요한 기능을 제공하는 데 중요합니다.
 
-템플릿을 제작할 때 `AdaptiveCard` 페이로드를 사용 하 여 인라인 하거나 [템플릿 sdk](sdk.md)를 사용 하 여 런타임에 데이터를 지정할 수 있습니다.
+템플릿을 제작할 때 템플릿 [sdk](sdk.md)를 사용 하 여 `AdaptiveCard` 페이로드를 사용 하거나 런타임에 데이터를 인라인으로 지정할 수 있습니다.
 
 ## <a name="specify-data-within-the-card"></a>카드 내에서 데이터 지정
 
-카드 페이로드 내에서 직접 데이터를 제공 하려면에 특성 `$data` `AdaptiveCard` 을 추가 하면 됩니다 (아래 참조).
+카드 페이로드 내에서 직접 데이터를 제공 하려면 `AdaptiveCard`에 `$data` 특성을 추가 하면 됩니다 (아래 참조).
 
 ## <a name="binding-to-the-data"></a>데이터에 바인딩
 
 카드의 `body` 또는 `actions` 내에서 데이터에 바인딩할 수 있습니다.
 
-* 바인딩 구문은로 시작 `{` 하 고로 `}`끝납니다. 예:`{myProperty}`
+* 바인딩 구문은 `{` 시작 하 여 `}`로 끝납니다. 예: `{myProperty}`
 * 하위 개체에 액세스 하는 점 표기법
 * 배열에서 키 또는 항목으로 속성을 검색 하는 인덱서 구문
 * 딥 계층에 대 한 정상적인 null 처리
@@ -76,7 +76,7 @@ ms.locfileid: "68878900"
 
 또는 데이터를 포함 하지 않고 다시 사용할 수 있는 카드 "템플릿"을 만드는 것이 좋습니다. 이 템플릿을 파일로 저장 하 고 소스 제어에 추가할 수 있습니다.
 
-**EmployeeCardTemplate**
+**EmployeeCardTemplate.json**
 
 ```json
 {
@@ -135,9 +135,9 @@ var card = template.expand(dataContext);
 
 적응 카드 디자이너가 템플릿을 지원 하도록 업데이트 되었습니다. 
 
-> 다음에서 "vnext" 미리 보기를 사용해 보세요. **[https://vnext.adaptivecards.io/designer](https://vnext.adaptivecards.io/designer)**
+> https://vnext.adaptivecards.io/designer 에서 "vnext" 미리 보기를 사용해 보세요.  **[](https://vnext.adaptivecards.io/designer)**
 
-[![이미지로](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](http://vnext.adaptivecards.io/designer)
+[![이미지](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](http://vnext.adaptivecards.io/designer)
 
  
 이 "vnext" URL은 버그를 포함 하 고 자주 배포 됩니다. **캐시를 지워** 최신이 있는지 확인 하 고, 버그를 찾았으면 알려 주세요.
@@ -167,7 +167,7 @@ var card = template.expand(dataContext);
 
 ### <a name="assigning-a-data-context-to-elements"></a>요소에 데이터 컨텍스트 할당
 
-모든 요소에 "데이터 컨텍스트"를 할당 하려면 요소에 `$data` 특성을 추가 합니다.
+모든 요소에 "데이터 컨텍스트"를 할당 하려면 `$data` 특성을 요소에 추가 합니다.
 
 ```json
 {
@@ -190,10 +190,10 @@ var card = template.expand(dataContext);
 
 이 부분은 약간의 "진한 매직"입니다. 사용자 의견을 환영 합니다.
 
-* 개체 `$data` 의 속성이 **배열로**설정 되어 있으면 **배열의 각 항목에 대해 개체 자체가 반복 됩니다.** 
-* 반복 `$data` 될 때 속성 바인딩에는 배열 내의 **개별 항목** 으로 범위가 지정 됩니다.
+* 개체의 `$data` 속성이 **배열로**설정 되어 있으면 **배열의 각 항목에 대해 개체 자체가 반복 됩니다.** 
+* 반복 될 때 속성 바인딩에 사용 되는 `$data`는 배열 내의 **개별 항목** 으로 범위가 지정 됩니다.
 
-예를 들어, `TextBlock` 아래는 배열 이기 때문 `$data` 에 3 번 반복 됩니다. `text` 속성이 배열 내에서 개별 개체의 `name` 속성에 바인딩되는 방식을 확인 합니다. 
+예를 들어 아래 `TextBlock`는 배열 `$data` 이므로 3 번 반복 됩니다. `text` 속성이 배열 내 개별 개체의 `name` 속성에 바인딩되는 방법을 확인 합니다. 
 
 ```json
 {
@@ -260,12 +260,12 @@ var card = template.expand(dataContext);
 
 * if (*expression*, *trueValue*, *falseValue*)
 
-**`if`예 들어**
+**`if` 예제**
 
 ```json
 {
     "type": "TextBlock",
-    "color": "if(priceChange >= 0, 'good', 'attention')"
+    "color": "{if(priceChange >= 0, 'good', 'attention')}"
 }
 ```
 
@@ -273,9 +273,9 @@ var card = template.expand(dataContext);
 
 * JSON-JSON 문자열을 구문 분석 하는 기능 
 
-**`JSON.parse`예 들어**
+**`JSON.parse` 예제**
 
-이는 `message` 속성이 JSON 직렬화 문자열인 Azure devops 응답입니다. 문자열 내의 값에 액세스 하려면 템플릿에서 `JSON.parse` 함수를 사용 해야 합니다.
+이는 `message` 속성이 JSON 직렬화 문자열인 Azure DevOps 응답입니다. 문자열 내의 값에 액세스 하려면 템플릿에서 `JSON.parse` 함수를 사용 해야 합니다.
 
 **데이터** 
 
@@ -290,7 +290,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-**Usage**
+**보려면**
 
 ```json
 {
@@ -314,7 +314,7 @@ var card = template.expand(dataContext);
 
 ## <a name="conditional-layout"></a>조건부 레이아웃
 
-조건이 충족 될 경우 전체 요소를 삭제 하려면 `$when` 속성을 사용 합니다. 가 이면 `$when` 요소가 사용자에 게 표시 되지 않습니다. `false`
+조건이 충족 될 경우 전체 요소를 삭제 하려면 `$when` 속성을 사용 합니다. `$when`이 `false`으로 계산 되 면 요소가 사용자에 게 표시 되지 않습니다.
 
 ```json
 {
