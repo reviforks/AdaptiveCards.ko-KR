@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: fdfe7b46614f046155ab84a5a487105d55afd7cb
-ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
+ms.openlocfilehash: 11ade4c2a41111f372873ea9a0677fe823c5b0ab
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72042544"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750419"
 ---
 # <a name="adaptive-cards-templating-preview"></a>적응형 카드 템플릿(미리 보기)
 
@@ -57,13 +57,13 @@ ms.locfileid: "72042544"
 > 
 > 다음 링크를 새 탭에서 열고 아래 예를 따라 진행합니다.
 >
-> **https://vnext.adaptivecards.io/designer**
+> **https://adaptivecards.io/designer**
 > 
 > 디자인 모드와 미리 보기 모드 간에 전환하려면 **미리 보기 모드** 단추를 클릭합니다.
 
 ![디자이너 스크린샷](content/2019-08-01-13-58-27.png)
 
-["vNext Designer](https://vnext.adaptivecards.io/designer)"는 템플릿을 작성하고 디자인 타임에 카드를 미리 볼 수 있게 **샘플 데이터**를 제공하는 지원 기능을 추가합니다.
+새로 추가된 Designer는 템플릿을 작성하고 디자인 타임에 카드를 미리 볼 수 있게 **샘플 데이터**를 제공하는 지원 기능을 추가합니다.
 
 아래 예를 **카드 페이로드 편집기** 창에 붙여넣습니다. 
 
