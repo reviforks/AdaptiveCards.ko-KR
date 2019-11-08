@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: b99a2905fb000653b7ee75204221b832a2b5a907
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: 42a1f43fbcfe1416820637af750acc960b9effde
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750405"
 ---
 # <a name="adaptive-cards-template-language"></a>적응 카드 템플릿 언어
 
@@ -135,12 +135,9 @@ var card = template.expand(dataContext);
 
 적응 카드 디자이너가 템플릿을 지원 하도록 업데이트 되었습니다. 
 
-> https://vnext.adaptivecards.io/designer 에서 "vnext" 미리 보기를 사용해 보세요.  **[](https://vnext.adaptivecards.io/designer)**
+> 사용해 보기:  **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**
 
-[![이미지](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](http://vnext.adaptivecards.io/designer)
-
- 
-이 "vnext" URL은 버그를 포함 하 고 자주 배포 됩니다. **캐시를 지워** 최신이 있는지 확인 하 고, 버그를 찾았으면 알려 주세요.
+[![이미지](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)
 
 * **샘플 데이터 편집기** -"미리 보기 모드"에 있는 경우 데이터 바인딩된 카드를 보려면 여기에 샘플 데이터를 지정 합니다. 이 창에는 기존 샘플 데이터의 데이터 구조를 채우는 작은 단추가 있습니다.
 * **데이터 구조** -샘플 데이터의 구조입니다. 필드를 디자인 화면으로 끌어 해당 필드에 대 한 바인딩을 만들 수 있습니다. 
@@ -346,7 +343,4 @@ var card = template.expand(dataContext);
 
 ## <a name="examples"></a>예
 
-지금까지 만든 제한 된 분량의 샘플만 있지만 시작 하려면 여기로 이동 하세요.
-
-* **샘플 열기** 를 클릭 하 여 [디자이너](http://vnext.adaptivecards.io/designer) 내에서 샘플 로드
-* 또는 직접 [디렉터리를 검색](https://github.com/Microsoft/AdaptiveCards/tree/js/template-engine/samples/v2.0/Scenarios) 합니다.
+업데이트 된 [샘플 페이지](https://adaptivecards.io/samples) 에서 모든 종류의 템플릿 기반 카드를 탐색할 수 있습니다.
