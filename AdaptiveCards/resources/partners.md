@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: ea662d3c3906c9c83de306d82d2c9e0d4997e6ad
-ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
+ms.openlocfilehash: 92b334a237c56c453a15a8a4a5f1a516c73abc57
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923056"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750414"
 ---
 # <a name="partners"></a>파트너 
 
@@ -21,7 +21,7 @@ ms.locfileid: "70923056"
 
 플랫폼 | 설명 | 설명서 | 버전
 ---------|-------------|---------------|---------
-[Bot Framework WebChat](https://github.com/Microsoft/BotFramework-WebChat)  | Microsoft Bot Framework의 포함 가능한 웹 채팅 컨트롤 | [시작](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2(Web Chat 4.5)
+[Bot Framework 웹 채팅](https://github.com/Microsoft/BotFramework-WebChat)  | Microsoft Bot Framework의 포함 가능한 웹 채팅 컨트롤 | [시작](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2(Web Chat 4.6)
 [Cortana 기술](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | Windows 10의 가상 도우미 | [시작](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
 [Windows 타임라인](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | 이 PC, 다른 Windows PC 및 iOS/Android 디바이스에서 시작한 과거의 활동을 다시 시작하는 새로운 방법입니다. | [시작](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
 [Outlook 실행 가능 메시지](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | 메일에 실행 가능 메시지 첨부 | [시작](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
