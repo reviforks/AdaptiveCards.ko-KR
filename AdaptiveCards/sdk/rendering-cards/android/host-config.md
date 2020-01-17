@@ -1,21 +1,21 @@
 ---
 title: 호스트 구성-Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: c44cf609fd52423a1ca17988a875c6dc48550007
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 091e2093c380affc8c895d069a2f52061b991d2f
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553345"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145493"
 ---
-# <a name="host-config---android"></a><span data-ttu-id="cef3b-102">호스트 구성-Android</span><span class="sxs-lookup"><span data-stu-id="cef3b-102">Host config - Android</span></span>
+# <a name="host-config---android"></a><span data-ttu-id="1db53-102">호스트 구성-Android</span><span class="sxs-lookup"><span data-stu-id="1db53-102">Host config - Android</span></span>
 
-<span data-ttu-id="cef3b-103">렌더러를 사용자 지정 하려면 HostConfig 개체의 인스턴스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="cef3b-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="cef3b-104">전체 설명은 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="cef3b-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
+<span data-ttu-id="1db53-103">렌더러를 사용자 지정 하려면 HostConfig 개체의 인스턴스를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="1db53-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="1db53-104">전체 설명은 [호스트 구성 스키마](../../../rendering-cards/host-config.md) 를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="1db53-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
 
-<span data-ttu-id="cef3b-105">문자열에서 HostConfig 개체를 만들려면 DeserializeFromString 메서드를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="cef3b-105">To Create a HostConfig object from a string, use the DeserializeFromString method</span></span>
+<span data-ttu-id="1db53-105">문자열에서 HostConfig 개체를 만들려면 DeserializeFromString 메서드를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1db53-105">To Create a HostConfig object from a string, use the DeserializeFromString method</span></span>
 
 ```java
 HostConfig hostConfig = HostConfig.DeserializeFromString(hostConfigText);
