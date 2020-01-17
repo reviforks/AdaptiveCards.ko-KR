@@ -1,15 +1,15 @@
 ---
 title: 작업 - Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 680aab595123ce35654d760f0e1dbbe406c8f29d
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299520"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145523"
 ---
 # <a name="actions---android"></a>작업 - Android
 
@@ -19,7 +19,7 @@ ms.locfileid: "68299520"
 > [V 1.1의 주요 변경 내용](#breaking-changes-in-v11)
 > 
 
-카드 동작이 실행 되 면 인터페이스를 ```ICardActionHandler``` 구현 하는 렌더링 호출에 전달 된 클래스가 호출 됩니다. 작업 처리기를 정의하는 방법은 다음과 같습니다.
+카드 작업을 실행 하면 ```ICardActionHandler``` 인터페이스를 구현 하는 렌더링 호출에 전달 된 클래스가 호출 됩니다. 작업 처리기를 정의하는 방법은 다음과 같습니다.
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -118,10 +118,10 @@ public class ActionHandler implements ICardActionHandler
 
 ## <a name="breaking-changes-in-v11"></a>V 1.1의 주요 변경 내용
 
-이 버전에 포함 된 미디어 요소에는을 구현 ```ICardActionHandler```하는 클래스에 의해 구현 되는 두 가지 새로운 메서드가 필요 합니다. 이러한 메서드는 다음과 같습니다.
+이 버전에 포함 된 미디어 요소에는 ```ICardActionHandler```를 구현 하는 클래스에 의해 구현 되는 두 가지 새로운 메서드가 필요 합니다. 이러한 메서드는 다음과 같습니다.
 
-* ```onMediaPlay```모든 미디어 요소에서 재생 단추를 처음 누를 때 호출 됩니다.
-* ```onMediaStop```미디어가 끝에 도달할 때 호출 됩니다.
+* ```onMediaPlay```는 media 요소에서 재생 단추를 처음 누를 때 호출 됩니다.
+* 미디어가 끝에 도달 하면 ```onMediaStop``` 호출 됩니다.
 
 이러한 메서드에 대 한 시그니처는 다음과 같습니다.
 

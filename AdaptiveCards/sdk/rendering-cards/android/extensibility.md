@@ -1,15 +1,15 @@
 ---
 title: Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 9e13ebad04c780db83d25129a9f5829a9d43ef69
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: ae5c1b2addf6fc5bcdda3defebb6de5925b58507
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917116"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145513"
 ---
 # <a name="extensibility---android"></a>확장성 - Android
 
@@ -380,7 +380,7 @@ IResourceResolver의 메서드를 IOnlineImageLoader와 최대한 비슷하게 �
 
 보시는 것처럼, 가장 큰 변화는 다음과 같습니다.
 
-* ```loadOnlineImage(String, GenericImageLoaderAsync)``` 이름이 ```resolveImageResource(String, GenericImageLoaderAsync)```
+* ```loadOnlineImage(String, GenericImageLoaderAsync)```의 이름이 ```resolveImageResource(String, GenericImageLoaderAsync)```로 바뀌었습니다.
 * 최대 너비가 필요한 시나리오를 지원 하기 위해 ```resolveImageResource(String, GenericImageLoaderAsync)```에 대 한 오버 로드가 ```resolveImageResource(String, GenericImageLoaderAsync, int)```으로 추가 되었습니다.
 
 ## <a name="custom-media-loading"></a>사용자 지정 미디어 로드

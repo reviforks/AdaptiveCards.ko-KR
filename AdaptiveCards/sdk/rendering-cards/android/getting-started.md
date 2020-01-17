@@ -1,15 +1,15 @@
 ---
 title: Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: b5f1279317e6b34d2e3bccee2625d972ac185e04
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: d15e0963427babe045a4db6f93800e09e0d95da9
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134272"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145503"
 ---
 # <a name="getting-started---android"></a>시작 - Android
 
@@ -19,7 +19,7 @@ Android 네이티브 컨트롤을 대상으로 하는 렌더러입니다.
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)
 
-게시된 패키지를 찾을 수 있습니다. ![여기](https://search.maven.org/search?q=g:io.adaptivecards)
+게시된 패키지를 찾을 수 있습니다. ![클릭하여](https://search.maven.org/search?q=g:io.adaptivecards)
 
 프로젝트에 라이브러리를 포함하려면 종속성 섹션의 프로젝트 gradle.build에 이 줄을 포함해야 합니다.
 
