@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: 11ade4c2a41111f372873ea9a0677fe823c5b0ab
-ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
+ms.openlocfilehash: 6a818e5009a0ec65e7e17fe47cc0172d2e34ae31
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73750419"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145553"
 ---
 # <a name="adaptive-cards-templating-preview"></a>적응형 카드 템플릿(미리 보기)
 
@@ -177,10 +177,10 @@ ms.locfileid: "73750419"
 >
 > 초기 미리 보기 중에는 제한된 SDK 세트만 사용할 수 있습니다. 출시 후에는 지원되는 모든 적응형 카드 플랫폼에 대한 템플릿 라이브러리가 제공될 예정입니다.
 
-플랫폼 | 설치 | 설명서
+플랫폼 | 설치 | 문서
 --- | --- | ---
-JavaScript | `npm install adaptivecards-templating` | [설명서](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | `nuget install AdaptiveCards.Templating` | [설명서](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk#net)
+JavaScript | `npm install adaptivecards-templating` | [문서](https://www.npmjs.com/package/adaptivecards-templating)
+.NET | `nuget install AdaptiveCards.Templating` | [문서](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>JavaScript 예
 

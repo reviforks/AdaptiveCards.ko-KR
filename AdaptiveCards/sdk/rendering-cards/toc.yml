@@ -1,10 +1,10 @@
 - name: Android
   items:
-    - name: 시작
+    - name: 시작하기
       href: android/getting-started.md
     - name: 카드 렌더링
       href: android/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: android/actions.md
     - name: 호스트 구성
       href: android/host-config.md
@@ -14,11 +14,11 @@
       href: android/extensibility.md
 - name: iOS
   items:
-    - name: 시작
+    - name: 시작하기
       href: ios/getting-started.md
     - name: 카드 렌더링
       href: ios/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: ios/actions.md
     - name: 호스트 구성
       href: ios/host-config.md
@@ -28,11 +28,11 @@
       href: ios/extensibility.md
 - name: JavaScript
   items:
-    - name: 시작
+    - name: 시작하기
       href: javascript/getting-started.md
     - name: 카드 렌더링
       href: javascript/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: javascript/actions.md
     - name: 호스트 구성
       href: javascript/host-config.md
@@ -44,11 +44,11 @@
       href: javascript/fabric.md
 - name: .NET HTML
   items:
-    - name: 시작
+    - name: 시작하기
       href: net-html/getting-started.md
     - name: 카드 렌더링
       href: net-html/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: net-html/actions.md
     - name: 호스트 구성
       href: net-html/host-config.md
@@ -58,11 +58,11 @@
       href: net-html/extensibility.md
 - name: .NET WPF
   items:
-    - name: 시작
+    - name: 시작하기
       href: net-wpf/getting-started.md
     - name: 카드 렌더링
       href: net-wpf/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: net-wpf/actions.md
     - name: 호스트 구성
       href: net-wpf/host-config.md
@@ -72,11 +72,11 @@
       href: net-wpf/extensibility.md
 - name: .NET 이미지
   items:
-    - name: 시작
+    - name: 시작하기
       href: net-image/getting-started.md
     - name: 카드 렌더링
       href: net-image/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: net-image/actions.md
     - name: 호스트 구성
       href: net-image/host-config.md
@@ -86,11 +86,11 @@
       href: net-image/extensibility.md
 - name: UWP
   items:
-    - name: 시작
+    - name: 시작하기
       href: uwp/getting-started.md
     - name: 카드 렌더링
       href: uwp/render-a-card.md
-    - name: 조치
+    - name: 작업
       href: uwp/actions.md
     - name: 호스트 구성
       href: uwp/host-config.md
@@ -100,5 +100,17 @@
       href: uwp/extensibility.md
 - name: ReactNative
   items:
-    - name: 시작
+    - name: 시작하기
       href: react-native/getting-started.md
+- name: Xamarin.Android
+  items:
+    - name: 시작하기
+      href: xamarin/android/getting-started.md
+    - name: 카드 렌더링
+      href: xamarin/android/render-a-card.md
+    - name: 작업
+      href: xamarin/android/actions.md
+    - name: 호스트 구성
+      href: xamarin/android/host-config.md
+    - name: 기본 스타일 지정
+      href: xamarin/android/native-styling.md
