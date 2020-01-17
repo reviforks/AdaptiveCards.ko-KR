@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 42a1f43fbcfe1416820637af750acc960b9effde
-ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
+ms.openlocfilehash: 2c583f774451e60f825cd8fd2c38f2ea34c2f8de
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73750405"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145403"
 ---
 # <a name="adaptive-cards-template-language"></a>적응 카드 템플릿 언어
 
@@ -187,8 +187,9 @@ var card = template.expand(dataContext);
 
 이 부분은 약간의 "진한 매직"입니다. 사용자 의견을 환영 합니다.
 
-* 개체의 `$data` 속성이 **배열로**설정 되어 있으면 **배열의 각 항목에 대해 개체 자체가 반복 됩니다.** 
-* 반복 될 때 속성 바인딩에 사용 되는 `$data`는 배열 내의 **개별 항목** 으로 범위가 지정 됩니다.
+* 적응 카드 요소의 `$data` 속성이 **배열**에 바인딩되어 있으면 **배열의 각 항목에 대해 요소 자체가 반복 됩니다.** 
+* 속성 값에 사용 되는 모든 바인딩 식 (`{myProperty}`)은 배열 내의 **개별 항목** 으로 범위가 지정 됩니다.
+* 문자열 배열에 바인딩하는 경우 `{$data}`를 사용 하 여 개별 문자열 요소에 액세스 합니다. 예: `"text": "{$data}"`
 
 예를 들어 아래 `TextBlock`는 배열 `$data` 이므로 3 번 반복 됩니다. `text` 속성이 배열 내 개별 개체의 `name` 속성에 바인딩되는 방법을 확인 합니다. 
 
@@ -287,7 +288,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-**보려면**
+**Usage**
 
 ```json
 {
